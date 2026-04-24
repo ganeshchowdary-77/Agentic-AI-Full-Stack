@@ -1,0 +1,36 @@
+version: "1.0"
+description: "Suspicious Timing — Chain-of-Thought fraud pattern prompt v1.0"
+agent: "suspicious_timing_analyzer"
+model: "gemini-2.5-pro"
+variables: ["claim_id", "claimant_name", "loss_date", "claimed_amount", "enriched_data"]
+content: |
+  PATTERN: Suspicious Timing
+  CLAIM: {claim_id} — {claimant_name} — {loss_date} — ${claimed_amount}
+
+  ENRICHED DATA:
+  {enriched_data}
+
+  Evaluate this claim for Suspicious Timing fraud using step-by-step reasoning:
+
+  Step 1 — Identify relevant data: Policy inception date, expiration date,
+    days_since_inception, days_until_expiration, recent coverage changes, lapse history.
+
+  Step 2 — Assess each indicator:
+    • Loss within 30 days of policy inception? (honeymoon fraud)
+    • Loss within 60 days of scheduled expiration/cancellation?
+    • Coverage upgraded within 72 hours before loss?
+    • Policy previously lapsed and reinstated shortly before loss?
+    • Loss reported on a Monday or Friday (weekend staging)?
+
+  Step 3 — Weigh evidence and consider exculpatory factors
+    (long-standing policy, no changes, weekday loss in normal business hours).
+
+  Step 4 — Score 0–100:
+    0–20: Clean. 21–40: Minor. 41–60: Notable. 61–80: Significant. 81–100: Critical.
+
+  Step 5 — Compile evidence list with specific values and sources.
+
+  OUTPUT JSON (no markdown, no code blocks):
+  {{"pattern": "suspicious_timing", "score": <0-100>, "severity": "<clean|minor|notable|significant|critical>",
+    "evidence": [{{"indicator": "...", "value": "...", "benchmark": "...", "severity": "...", "source": "..."}}],
+    "reasoning": "<step-by-step summary>", "exculpatory_factors": ["..."]}}

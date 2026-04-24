@@ -1,0 +1,84 @@
+version: "1.0"
+description: "Fraud Classification — Few-Shot claim-level FLAGGED/CLEAN classification with priority tier v1.0"
+agent: "fraud_pattern_analyzer"
+model: "gemini-2.5-pro"
+prompt_type: "few_shot"
+variables: ["claim_id", "loss_description", "composite_score", "duplicate_score", "duplicate_summary", "timing_score", "timing_summary", "inflated_score", "inflated_summary", "provider_score", "provider_summary"]
+content: |
+  Based on the composite fraud score and individual pattern results, classify this claim
+  as FLAGGED (requires SIU investigation) or CLEAN (no action needed).
+  Assign a priority tier and provide a brief classification rationale.
+
+  CLASSIFICATION RULES:
+  - Composite score >= 80: FLAGGED — CRITICAL
+  - Composite score 60-79: FLAGGED — HIGH
+  - Composite score 40-59: FLAGGED — MEDIUM (warrants monitoring or light investigation)
+  - Composite score < 40:  CLEAN — LOW (unless a single pattern scored >= 70 — single-pattern override)
+
+  === EXAMPLE 1: FLAGGED (Critical) ===
+  Claim: CLM-2024-0847 — "Fleet truck rear-end collision, $42K repair estimate"
+  Composite Score: 83.5
+  Pattern Results:
+    - Duplicate/Similar: 88 (3 prior claims on same VIN in 14 months, same repair shop)
+    - Suspicious Timing: 72 (claim filed 22 days after policy inception)
+    - Inflated Amounts:  85 (repair $42,000 vs. market value $28,500 = 1.47x)
+    - Provider Network:  91 (repair shop on 6 of 8 batch claims, billing 2.3x regional avg)
+  Classification: FLAGGED
+  Priority: CRITICAL
+  Rationale: All 4 patterns triggered with high scores. Repair shop is a central node
+  appearing on 75% of batch claims with inflated billing. Combined with VIN history and
+  new-policy timing, strong indicators of organized provider-assisted fraud.
+
+  === EXAMPLE 2: FLAGGED (Medium) ===
+  Claim: CLM-2024-0851 — "Delivery van side-swipe in parking lot, $8,200 repair"
+  Composite Score: 47.2
+  Pattern Results:
+    - Duplicate/Similar: 35 (1 prior claim 11 months ago, different vehicle)
+    - Suspicious Timing: 62 (Friday incident, Monday report — 68hr delay)
+    - Inflated Amounts:  48 (repair slightly above regional median but within high range)
+    - Provider Network:  40 (normal billing, 2 referral connections)
+  Classification: FLAGGED
+  Priority: MEDIUM
+  Rationale: Friday-to-Monday reporting delay is the primary concern — classic staging
+  window. Individually each pattern is borderline, but the combination of delayed
+  reporting + slightly inflated repair + provider referral connections warrants review.
+
+  === EXAMPLE 3: CLEAN ===
+  Claim: CLM-2024-0853 — "Company sedan hit at intersection, $5,100 repair"
+  Composite Score: 18.4
+  Pattern Results:
+    - Duplicate/Similar: 12 (no prior claims for claimant or VIN)
+    - Suspicious Timing: 22 (same-day report, policy active 3 years)
+    - Inflated Amounts:  15 (repair $5,100 vs. regional median $4,800 — reasonable)
+    - Provider Network:  24 (normal volume, no referral anomalies)
+  Classification: CLEAN
+  Priority: LOW
+  Rationale: No pattern triggered meaningfully. First-time claimant, long-standing
+  policy, prompt reporting, repair costs within range. Standard legitimate claim.
+
+  === EXAMPLE 4: FLAGGED (High) — Single-Pattern Override ===
+  Claim: CLM-2024-0856 — "Box truck windshield replacement, $1,200"
+  Composite Score: 34.8
+  Pattern Results:
+    - Duplicate/Similar: 15 (no prior claims)
+    - Suspicious Timing: 18 (normal timing, mid-policy)
+    - Inflated Amounts:  22 (within normal range)
+    - Provider Network:  78 (glass shop under active investigation, license suspended)
+  Classification: FLAGGED
+  Priority: HIGH
+  Rationale: Single-pattern override — Provider Network scored 78 because the glass
+  shop is under active investigation with a suspended license. Individual pattern >= 70
+  triggers FLAGGED regardless of composite score.
+
+  === NOW CLASSIFY ===
+  Claim: {claim_id} — "{loss_description}"
+  Composite Score: {composite_score}
+  Pattern Results:
+    - Duplicate/Similar: {duplicate_score} ({duplicate_summary})
+    - Suspicious Timing:  {timing_score} ({timing_summary})
+    - Inflated Amounts:   {inflated_score} ({inflated_summary})
+    - Provider Network:   {provider_score} ({provider_summary})
+
+  OUTPUT JSON (no markdown, no code blocks):
+  {{"classification": "<FLAGGED|CLEAN>", "priority": "<CRITICAL|HIGH|MEDIUM|LOW>",
+    "rationale": "<1-2 sentence explanation referencing specific pattern evidence>"}}

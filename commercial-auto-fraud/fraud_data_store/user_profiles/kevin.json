@@ -1,0 +1,25 @@
+{
+  "user_id": "kevin_jr",
+  "name": "Kevin",
+  "role": "Junior SIU Analyst",
+  "experience": "junior",
+  "experience_level": "junior",
+  "specialization": "general",
+  "preferred_detail_level": "verbose",
+  "preferred_output_mode": "full_report",
+  "detail_level": "detailed",
+  "preferred_format": "narrative",
+  "background": "2 years in fraud investigation, transferred from claims adjusting",
+  "open_investigations": 25,
+  "profiling_complete": true,
+  "session_count": 3,
+  "last_interaction": "2026-04-18T14:22:00Z",
+  "response_style": {
+    "use_definitions": true,
+    "include_next_steps": true,
+    "use_examples": true,
+    "verbose_evidence": true,
+    "explain_scores": true,
+    "threshold_filter": 0
+  }
+}

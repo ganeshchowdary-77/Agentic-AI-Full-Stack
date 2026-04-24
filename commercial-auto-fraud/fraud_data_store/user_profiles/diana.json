@@ -1,0 +1,25 @@
+{
+  "user_id": "diana_sr",
+  "name": "Diana",
+  "role": "Senior SIU Lead",
+  "experience": "senior",
+  "experience_level": "senior",
+  "specialization": "provider_fraud",
+  "preferred_detail_level": "concise",
+  "preferred_output_mode": "exceptions_only",
+  "detail_level": "concise",
+  "preferred_format": "table",
+  "background": "15 years SIU experience, manages team of 8 analysts, provider fraud specialist",
+  "open_investigations": 100,
+  "profiling_complete": true,
+  "session_count": 47,
+  "last_interaction": "2026-04-22T09:15:00Z",
+  "response_style": {
+    "use_definitions": false,
+    "include_next_steps": false,
+    "use_examples": false,
+    "verbose_evidence": false,
+    "explain_scores": false,
+    "threshold_filter": 60
+  }
+}

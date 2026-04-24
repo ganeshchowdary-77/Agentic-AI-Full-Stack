@@ -1,0 +1,34 @@
+version: "1.0"
+description: "Inflated Amounts — Chain-of-Thought fraud pattern prompt v1.0"
+agent: "inflated_amounts_analyzer"
+model: "gemini-2.5-pro"
+variables: ["claim_id", "claimant_name", "loss_date", "claimed_amount", "enriched_data"]
+content: |
+  PATTERN: Inflated Amounts
+  CLAIM: {claim_id} — {claimant_name} — {loss_date} — ${claimed_amount}
+
+  ENRICHED DATA:
+  {enriched_data}
+
+  Evaluate this claim for Inflated Amounts fraud using step-by-step reasoning:
+
+  Step 1 — Identify relevant data: claimed_amount, vehicle market_value,
+    salvage_value, total_loss_threshold, regional_repair_benchmarks, provider billing_ratio.
+
+  Step 2 — Assess each indicator:
+    • Claimed repair cost > vehicle market value?
+    • Repair estimate vs. regional median for this loss type (minor/major/comprehensive)?
+    • Provider average billing vs. regional_average_billing (billing_ratio > 2.0 is flagged)?
+    • Rental duration claimed vs. typical repair time for this damage type?
+
+  Step 3 — Weigh evidence, account for exculpatory factors
+    (luxury vehicle, specialized parts, documented injuries, complex repair).
+
+  Step 4 — Score 0–100. Flag anything where claimed > 1.5x benchmark.
+
+  Step 5 — Evidence list with specific dollar amounts and ratios.
+
+  OUTPUT JSON (no markdown, no code blocks):
+  {{"pattern": "inflated_amounts", "score": <0-100>, "severity": "<clean|minor|notable|significant|critical>",
+    "evidence": [{{"indicator": "...", "value": "...", "benchmark": "...", "severity": "...", "source": "..."}}],
+    "reasoning": "<step-by-step summary>", "exculpatory_factors": ["..."]}}

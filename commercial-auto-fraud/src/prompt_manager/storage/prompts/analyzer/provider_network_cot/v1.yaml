@@ -1,0 +1,36 @@
+version: "1.0"
+description: "Provider Network Anomalies — Chain-of-Thought fraud pattern prompt v1.0"
+agent: "provider_network_analyzer"
+model: "gemini-2.5-pro"
+variables: ["claim_id", "claimant_name", "loss_date", "claimed_amount", "enriched_data"]
+content: |
+  PATTERN: Provider Network Anomalies
+  CLAIM: {claim_id} — {claimant_name} — {loss_date} — ${claimed_amount}
+
+  ENRICHED DATA:
+  {enriched_data}
+
+  Evaluate this claim for Provider Network Anomaly fraud using step-by-step reasoning:
+
+  Step 1 — Identify relevant data: provider license_status, billing_ratio,
+    referral_connections, claims_outside_service_area, flagged_claims_count, total_claims_served.
+
+  Step 2 — Assess each indicator:
+    • Provider license expired, suspended, or under investigation?
+    • Billing ratio > 2.0 (provider charges 2x regional average)?
+    • Provider has referral connections to other providers on this batch?
+    • Provider operating outside their geographic service area?
+    • Provider flagged_claims_count > 10% of total_claims_served?
+    • Circular referral pattern (tow company → repair shop → back)?
+
+  Step 3 — Weigh evidence, consider exculpatory factors
+    (specialty provider, patient choice, legitimate referrals, new provider with low volume).
+
+  Step 4 — Score 0–100.
+
+  Step 5 — Evidence list with specific values and sources.
+
+  OUTPUT JSON (no markdown, no code blocks):
+  {{"pattern": "provider_network", "score": <0-100>, "severity": "<clean|minor|notable|significant|critical>",
+    "evidence": [{{"indicator": "...", "value": "...", "benchmark": "...", "severity": "...", "source": "..."}}],
+    "reasoning": "<step-by-step summary>", "exculpatory_factors": ["..."]}}

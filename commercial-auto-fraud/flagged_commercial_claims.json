@@ -1,0 +1,266 @@
+{
+  "batch_id": "BATCH-FLAGGED-2026-001",
+  "batch_name": "Flagged Commercial Claims — Pre-Filtered Batch",
+  "submitted_by": "Rules Engine Auto-Flag",
+  "submission_date": "2026-04-18",
+  "claims": [
+    {
+      "claim_id": "CLM-2026-101",
+      "claim_date": "2026-04-15",
+      "loss_date": "2026-04-10",
+      "loss_type": "collision",
+      "loss_description": "Fleet delivery truck rear-ended at traffic signal. Tailgate and rear axle damage. Driver reports back pain.",
+      "claimant": {
+        "claimant_id": "C-9901",
+        "name": "Carlos Mendez",
+        "phone": "555-0201",
+        "email": "c.mendez@example.com",
+        "address": "311 Freight Row, Dallas TX 75201",
+        "relationship_to_insured": "employee_driver"
+      },
+      "vehicle": {
+        "vin": "1FTFW1E53NFA12300",
+        "year": 2020,
+        "make": "Ford",
+        "model": "F-250",
+        "vehicle_type": "fleet_truck",
+        "use": "commercial_delivery"
+      },
+      "incident": {
+        "location": "I-35 southbound near Mockingbird, Dallas TX",
+        "police_report_filed": true,
+        "police_report_number": "DPD-2026-040210",
+        "witnesses": 0,
+        "other_party_involved": true,
+        "other_party_info": {"name": "Unknown", "vehicle": "Silver sedan", "insurance_carrier": "Unknown"}
+      },
+      "estimates": {
+        "repair_estimate": 38500.00,
+        "repair_shop": {"provider_id": "PRV-0093", "name": "AllStar Truck & Auto Repair", "address": "8801 Airline Dr, Houston TX"},
+        "medical_estimate": 8200.00,
+        "rental_estimate": 2800.00,
+        "rental_duration_days": 18,
+        "towing_cost": 400.00
+      },
+      "claimed_amount": 49900.00,
+      "policy_number": "POL-COMM-8833",
+      "reported_by": "Carlos Mendez",
+      "report_date": "2026-04-12"
+    },
+    {
+      "claim_id": "CLM-2026-102",
+      "claim_date": "2026-04-16",
+      "loss_date": "2026-04-14",
+      "loss_type": "collision",
+      "loss_description": "Company cargo van total loss — rolled over on freeway on-ramp. Cab and frame destroyed.",
+      "claimant": {
+        "claimant_id": "C-9902",
+        "name": "Brian Foster",
+        "phone": "555-0202",
+        "email": "b.foster@example.com",
+        "address": "7700 Commerce Blvd, Houston TX 77036",
+        "relationship_to_insured": "owner_operator"
+      },
+      "vehicle": {
+        "vin": "3C6TRVAG1JE123900",
+        "year": 2019,
+        "make": "Ram",
+        "model": "ProMaster 2500",
+        "vehicle_type": "cargo_van",
+        "use": "commercial_delivery"
+      },
+      "incident": {
+        "location": "I-10 westbound on-ramp near Silber, Houston TX",
+        "police_report_filed": true,
+        "police_report_number": "HPD-2026-040414",
+        "witnesses": 1,
+        "other_party_involved": false,
+        "other_party_info": {}
+      },
+      "estimates": {
+        "repair_estimate": 95000.00,
+        "repair_shop": {"provider_id": "PRV-0099", "name": "Premier Fleet Solutions", "address": "4400 Gulf Fwy, Houston TX"},
+        "medical_estimate": 15000.00,
+        "rental_estimate": 4200.00,
+        "rental_duration_days": 28,
+        "towing_cost": 850.00
+      },
+      "claimed_amount": 115050.00,
+      "policy_number": "POL-COMM-4412",
+      "reported_by": "Brian Foster",
+      "report_date": "2026-04-16"
+    },
+    {
+      "claim_id": "CLM-2026-103",
+      "claim_date": "2026-04-17",
+      "loss_date": "2026-04-15",
+      "loss_type": "comprehensive",
+      "loss_description": "Company SUV windshield shattered and hood dented by hailstorm. Parked overnight in open lot.",
+      "claimant": {
+        "claimant_id": "C-9903",
+        "name": "Patricia Wong",
+        "phone": "555-0203",
+        "email": "p.wong@example.com",
+        "address": "2200 Westheimer Rd, Houston TX 77098",
+        "relationship_to_insured": "employee_driver"
+      },
+      "vehicle": {
+        "vin": "5YJSA1E26MF100003",
+        "year": 2021,
+        "make": "Toyota",
+        "model": "RAV4",
+        "vehicle_type": "suv",
+        "use": "commercial_field"
+      },
+      "incident": {
+        "location": "Open parking lot, 2200 Westheimer Rd, Houston TX",
+        "police_report_filed": false,
+        "police_report_number": "",
+        "witnesses": 0,
+        "other_party_involved": false,
+        "other_party_info": {}
+      },
+      "estimates": {
+        "repair_estimate": 18200.00,
+        "repair_shop": {"provider_id": "PRV-0241", "name": "ClearView Glass & Auto", "address": "1100 N Loop W, Houston TX"},
+        "medical_estimate": 0.00,
+        "rental_estimate": 1200.00,
+        "rental_duration_days": 8,
+        "towing_cost": 0.00
+      },
+      "claimed_amount": 19400.00,
+      "policy_number": "POL-COMM-7122",
+      "reported_by": "Patricia Wong",
+      "report_date": "2026-04-17"
+    },
+    {
+      "claim_id": "CLM-2026-104",
+      "claim_date": "2026-04-14",
+      "loss_date": "2026-04-11",
+      "loss_type": "collision",
+      "loss_description": "Fleet box truck rear-ended at loading dock. Bumper, tailgate, and hitch assembly damaged.",
+      "claimant": {
+        "claimant_id": "C-9904",
+        "name": "Derek Johnson",
+        "phone": "555-0204",
+        "email": "d.johnson@example.com",
+        "address": "900 Distribution Dr, San Antonio TX 78219",
+        "relationship_to_insured": "employee_driver"
+      },
+      "vehicle": {
+        "vin": "1FTNF21L92EB00104",
+        "year": 2022,
+        "make": "Ford",
+        "model": "E-350 Box",
+        "vehicle_type": "box_truck",
+        "use": "commercial_delivery"
+      },
+      "incident": {
+        "location": "Loading dock area, 900 Distribution Dr, San Antonio TX",
+        "police_report_filed": false,
+        "police_report_number": "",
+        "witnesses": 2,
+        "other_party_involved": false,
+        "other_party_info": {}
+      },
+      "estimates": {
+        "repair_estimate": 28400.00,
+        "repair_shop": {"provider_id": "PRV-0093", "name": "AllStar Truck & Auto Repair", "address": "8801 Airline Dr, Houston TX"},
+        "medical_estimate": 0.00,
+        "rental_estimate": 2100.00,
+        "rental_duration_days": 14,
+        "towing_cost": 500.00
+      },
+      "claimed_amount": 31000.00,
+      "policy_number": "POL-COMM-6655",
+      "reported_by": "Fleet Manager",
+      "report_date": "2026-04-13"
+    },
+    {
+      "claim_id": "CLM-2026-105",
+      "claim_date": "2026-04-15",
+      "loss_date": "2026-04-11",
+      "loss_type": "collision",
+      "loss_description": "Delivery van side-swiped by passing truck on service road Friday evening. Driver side door and panel damage.",
+      "claimant": {
+        "claimant_id": "C-9905",
+        "name": "Amy Williams",
+        "phone": "555-0205",
+        "email": "a.williams@example.com",
+        "address": "5500 N Lamar Blvd, Austin TX 78751",
+        "relationship_to_insured": "employee_driver"
+      },
+      "vehicle": {
+        "vin": "WBA3A5C50DF000105",
+        "year": 2020,
+        "make": "Mercedes",
+        "model": "Sprinter 2500",
+        "vehicle_type": "cargo_van",
+        "use": "commercial_delivery"
+      },
+      "incident": {
+        "location": "Burnet Rd service road, Austin TX",
+        "police_report_filed": false,
+        "police_report_number": "",
+        "witnesses": 0,
+        "other_party_involved": true,
+        "other_party_info": {"name": "Unknown — fled scene", "vehicle": "Unknown truck", "insurance_carrier": ""}
+      },
+      "estimates": {
+        "repair_estimate": 18000.00,
+        "repair_shop": {"provider_id": "PRV-0315", "name": "Austin Fleet Repair", "address": "1200 Airport Blvd, Austin TX"},
+        "medical_estimate": 1500.00,
+        "rental_estimate": 1800.00,
+        "rental_duration_days": 12,
+        "towing_cost": 300.00
+      },
+      "claimed_amount": 21600.00,
+      "policy_number": "POL-COMM-5519",
+      "reported_by": "Amy Williams",
+      "report_date": "2026-04-14"
+    },
+    {
+      "claim_id": "CLM-2026-106",
+      "claim_date": "2026-04-16",
+      "loss_date": "2026-04-13",
+      "loss_type": "collision",
+      "loss_description": "Company car side-swiped in parking structure. Passenger door and quarter panel scuffed.",
+      "claimant": {
+        "claimant_id": "C-9906",
+        "name": "Kevin Park",
+        "phone": "555-0206",
+        "email": "k.park@example.com",
+        "address": "3300 Congress Ave, Austin TX 78704",
+        "relationship_to_insured": "employee_driver"
+      },
+      "vehicle": {
+        "vin": "WBAJB0C55JB000106",
+        "year": 2021,
+        "make": "Honda",
+        "model": "Accord",
+        "vehicle_type": "sedan",
+        "use": "commercial_field"
+      },
+      "incident": {
+        "location": "Covered parking structure, 3300 Congress Ave, Austin TX",
+        "police_report_filed": false,
+        "police_report_number": "",
+        "witnesses": 0,
+        "other_party_involved": false,
+        "other_party_info": {}
+      },
+      "estimates": {
+        "repair_estimate": 6800.00,
+        "repair_shop": {"provider_id": "PRV-0093", "name": "AllStar Truck & Auto Repair", "address": "8801 Airline Dr, Houston TX"},
+        "medical_estimate": 0.00,
+        "rental_estimate": 600.00,
+        "rental_duration_days": 4,
+        "towing_cost": 0.00
+      },
+      "claimed_amount": 7400.00,
+      "policy_number": "POL-COMM-3301",
+      "reported_by": "Kevin Park",
+      "report_date": "2026-04-15"
+    }
+  ]
+}

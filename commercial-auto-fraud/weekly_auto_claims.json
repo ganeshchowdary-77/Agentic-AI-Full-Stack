@@ -1,0 +1,138 @@
+{
+  "batch_id": "batch_2026_w16",
+  "batch_name": "Weekly Auto Claims — Week 16, April 2026",
+  "claims": [
+    {
+      "claim_id": "CLM-2026-001",
+      "claimant": {"id": "C-4821", "name": "Marcus Rivera"},
+      "provider": {"id": "PRV-0093", "type": "repair_shop"},
+      "vehicle": {"vin": "1HGCM82633A004352", "year": 2022, "make": "Honda", "model": "Accord"},
+      "policy_number": "POL-99-1234",
+      "claimed_amount": 42000.00,
+      "loss_date": "2026-04-11",
+      "loss_type": "major_collision",
+      "description": "Rear-end collision on I-94 northbound. Total loss claimed. Towed by referral from provider."
+    },
+    {
+      "claim_id": "CLM-2026-002",
+      "claimant": {"id": "C-4821", "name": "Marcus Rivera"},
+      "provider": {"id": "PRV-0093", "type": "repair_shop"},
+      "vehicle": {"vin": "1HGCM82633A004352", "year": 2022, "make": "Honda", "model": "Accord"},
+      "policy_number": "POL-99-5678",
+      "claimed_amount": 38500.00,
+      "loss_date": "2026-04-13",
+      "loss_type": "major_collision",
+      "description": "Rear-end collision on same vehicle, filed under second policy 2 days after CLM-2026-001."
+    },
+    {
+      "claim_id": "CLM-2026-003",
+      "claimant": {"id": "C-5502", "name": "Diana Kowalski"},
+      "provider": {"id": "PRV-0200", "type": "medical"},
+      "vehicle": {"vin": "2T1BR32E61C002711", "year": 2019, "make": "Toyota", "model": "Camry"},
+      "policy_number": "POL-99-7890",
+      "claimed_amount": 55000.00,
+      "loss_date": "2026-04-07",
+      "loss_type": "comprehensive",
+      "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury requiring surgery."
+    },
+    {
+      "claim_id": "CLM-2026-004",
+      "claimant": {"id": "C-201", "name": "Thomas Bennett"},
+      "provider": {"id": "PRV-0301", "type": "repair_shop"},
+      "vehicle": {"vin": "3VWFE21C04M000001", "year": 2021, "make": "Volkswagen", "model": "Jetta"},
+      "policy_number": "POL-200-4432",
+      "claimed_amount": 8200.00,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-005",
+      "claimant": {"id": "C-103", "name": "Priya Menon"},
+      "provider": {"id": "PRV-0093", "type": "repair_shop"},
+      "vehicle": {"vin": "5XYKT3A62DG143001", "year": 2020, "make": "Kia", "model": "Sorento"},
+      "policy_number": "POL-99-2211",
+      "claimed_amount": 29000.00,
+      "loss_date": "2026-04-04",
+      "loss_type": "major_collision",
+      "description": "Total loss claimed. Same repair shop as CLM-2026-001 and CLM-2026-002. Claimed amount exceeds vehicle market value."
+    },
+    {
+      "claim_id": "CLM-2026-006",
+      "claimant": {"id": "C-104", "name": "Robert Kim"},
+      "provider": {"id": "PRV-0150", "type": "medical"},
+      "vehicle": {"vin": "1N4AL3AP4EC123456", "year": 2023, "make": "Nissan", "model": "Altima"},
+      "policy_number": "POL-300-8821",
+      "claimed_amount": 4500.00,
+      "loss_date": "2026-04-11",
+      "loss_type": "minor_collision",
+      "description": "Friday evening rear-end at stoplight. Reported Monday morning. Minor whiplash."
+    },
+    {
+      "claim_id": "CLM-2026-007",
+      "claimant": {"id": "C-601", "name": "Elena Vasquez"},
+      "provider": {"id": "PRV-0400", "type": "repair_shop"},
+      "vehicle": {"vin": "1FTBW2CM4JKA12345", "year": 2018, "make": "Ford", "model": "Transit"},
+      "policy_number": "POL-88-4411",
+      "claimed_amount": 48000.00,
+      "loss_date": "2026-04-10",
+      "loss_type": "major_collision",
+      "description": "Commercial fleet vehicle. Alleged total loss. Coverage upgrade filed 68 hours before incident."
+    },
+    {
+      "claim_id": "CLM-2026-008",
+      "claimant": {"id": "C-701", "name": "Sarah Chen"},
+      "provider": {"id": "PRV-0500", "type": "repair_shop"},
+      "vehicle": {"vin": "4T1BF1FK5GU123456", "year": 2024, "make": "Toyota", "model": "Camry"},
+      "policy_number": "POL-400-1122",
+      "claimed_amount": 3200.00,
+      "loss_date": "2026-04-08",
+      "loss_type": "minor_collision",
+      "description": "Routine minor collision. Police report filed. Independent repair estimate provided."
+    },
+    {
+      "claim_id": "CLM-2026-009",
+      "claimant": {"id": "C-802", "name": "James Okafor"},
+      "provider": {"id": "PRV-0093", "type": "repair_shop"},
+      "vehicle": {"vin": "WBA3A5C50DF000109", "year": 2020, "make": "BMW", "model": "3 Series"},
+      "policy_number": "POL-99-8844",
+      "claimed_amount": 35500.00,
+      "loss_date": "2026-04-06",
+      "loss_type": "major_collision",
+      "description": "Intersection collision. Sent to FastFix Auto Body (PRV-0093) — same shop appearing on 3 other batch claims."
+    },
+    {
+      "claim_id": "CLM-2026-010",
+      "claimant": {"id": "C-901", "name": "Linda Park"},
+      "provider": {"id": "PRV-0600", "type": "repair_shop"},
+      "vehicle": {"vin": "1G1ZD5ST8JF100010", "year": 2021, "make": "Chevrolet", "model": "Malibu"},
+      "policy_number": "POL-500-3310",
+      "claimed_amount": 5800.00,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Side-swipe in parking structure. Single damage panel. Repair at local independent shop."
+    },
+    {
+      "claim_id": "CLM-2026-011",
+      "claimant": {"id": "C-902", "name": "David Torres"},
+      "provider": {"id": "PRV-0700", "type": "repair_shop"},
+      "vehicle": {"vin": "3FADP4BJ7BM100011", "year": 2022, "make": "Ford", "model": "Fusion"},
+      "policy_number": "POL-600-7721",
+      "claimed_amount": 12600.00,
+      "loss_date": "2026-04-03",
+      "loss_type": "major_collision",
+      "description": "T-bone collision at uncontrolled intersection. Moderate door and frame damage. Police report filed."
+    },
+    {
+      "claim_id": "CLM-2026-012",
+      "claimant": {"id": "C-903", "name": "Amy Johnson"},
+      "provider": {"id": "PRV-0200", "type": "medical"},
+      "vehicle": {"vin": "5J8TB3H56GL100012", "year": 2023, "make": "Acura", "model": "RDX"},
+      "policy_number": "POL-99-0012",
+      "claimed_amount": 41000.00,
+      "loss_date": "2026-04-05",
+      "loss_type": "comprehensive",
+      "description": "Rear-end collision. Referred to QuickMed Injury Clinic (PRV-0200) — same clinic as CLM-2026-003. Alleged spinal injury."
+    }
+  ]
+}

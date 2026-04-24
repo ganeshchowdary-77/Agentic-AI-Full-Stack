@@ -1,0 +1,3 @@
+{
+  "report": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr, and 0 prior claim(s) on this specific VIN.\", \"exculpatory_factors\": [\"No matching VIN, claimant, or description indicators\"]}"
+}

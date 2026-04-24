@@ -1,0 +1,53 @@
+version: "1.0"
+description: "Composite Fraud Score — Chain-of-Thought weighted scoring and narrative coherence v1.0"
+agent: "fraud_pattern_analyzer"
+model: "gemini-2.5-pro"
+prompt_type: "cot"
+variables: ["claim_id", "claimant_name", "claimed_amount", "duplicate_score", "timing_score", "inflated_score", "network_score", "pattern_evidence"]
+content: |
+  CLAIM: {claim_id} — {claimant_name} — ${claimed_amount}
+
+  PATTERN SUB-SCORES:
+  - Duplicate/Similar Claims: {duplicate_score}
+  - Suspicious Timing:        {timing_score}
+  - Inflated Amounts:         {inflated_score}
+  - Provider Network:         {network_score}
+
+  COMPUTE COMPOSITE SCORE using step-by-step reasoning:
+
+  Step 1 — Apply weights
+  - Duplicate/Similar: {duplicate_score} x 0.30 = <computed>
+  - Suspicious Timing: {timing_score}    x 0.20 = <computed>
+  - Inflated Amounts:  {inflated_score}  x 0.25 = <computed>
+  - Provider Network:  {network_score}   x 0.25 = <computed>
+
+  Step 2 — Sum weighted scores
+  Composite = sum of all four weighted values. Round to 1 decimal place.
+
+  Step 3 — Determine confidence
+  Count patterns with sub-score >= 40 (flagged):
+  - 3 or 4 flagged: Confidence = HIGH
+  - 2 flagged:      Confidence = MEDIUM
+  - 0 or 1 flagged: Confidence = LOW
+
+  Step 4 — Assign priority tier
+  - 0-39:   LOW
+  - 40-59:  MEDIUM
+  - 60-79:  HIGH
+  - 80-100: CRITICAL
+
+  Step 5 — Assess narrative coherence
+  Do the flagged patterns tell a coherent fraud story?
+  Examples of coherent narratives:
+    - Timing (new policy) + Provider (same flagged shop) + Inflated (above market) = provider-assisted scheme
+    - Duplicate (same VIN) + Timing (lapse/reinstate) = deliberate repeat fraud
+    - Provider (referral ring) + Inflated (medical) = medical mill scheme
+  State the narrative in 1-2 sentences if patterns are coherent, or note lack of coherence.
+
+  PATTERN EVIDENCE SUMMARY:
+  {pattern_evidence}
+
+  OUTPUT JSON (no markdown, no code blocks):
+  {{"composite_score": <float>, "confidence": "<HIGH|MEDIUM|LOW>", "priority_tier": "<critical|high|medium|low>",
+    "patterns_flagged": <int 0-4>, "narrative": "<1-2 sentence coherence assessment>",
+    "weighted_breakdown": {{"duplicate_similar": <float>, "suspicious_timing": <float>, "inflated_amounts": <float>, "provider_network": <float>}}}}

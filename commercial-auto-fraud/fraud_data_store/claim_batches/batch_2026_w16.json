@@ -1,0 +1,3118 @@
+{
+  "batch_id": "batch_2026_w16",
+  "batch_name": "Weekly Auto Claims \u00e2\u20ac\u201d Week 16, April 2026",
+  "total_claims": 12,
+  "tier_distribution": {
+    "critical": 1,
+    "high": 4,
+    "medium": 1,
+    "low": 6
+  },
+  "top_triggered_patterns": {
+    "inflated_amounts": 7,
+    "provider_network": 6,
+    "duplicate_similar": 5,
+    "suspicious_timing": 4
+  },
+  "repeat_providers": {
+    "PRV-0093": 4,
+    "PRV-0200": 2
+  },
+  "validation_summary": "Batch 'batch_2026_w16': 12 claims received \u2014 12 valid, 0 invalid.",
+  "invalid_claims": [],
+  "results": [
+    {
+      "claim_id": "CLM-2026-001",
+      "enriched": {
+        "claim_id": "CLM-2026-001",
+        "raw_claim": {
+          "claim_id": "CLM-2026-001",
+          "claimant": {
+            "id": "C-4821",
+            "name": "Marcus Rivera"
+          },
+          "provider": {
+            "id": "PRV-0093",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "1HGCM82633A004352",
+            "year": 2022,
+            "make": "Honda",
+            "model": "Accord"
+          },
+          "policy_number": "POL-99-1234",
+          "claimed_amount": 42000.0,
+          "loss_date": "2026-04-11",
+          "loss_type": "major_collision",
+          "description": "Rear-end collision on I-94 northbound. Total loss claimed. Towed by referral from provider."
+        },
+        "claimant_history": {
+          "claimant_id": "C-4821",
+          "total_prior_claims": 4,
+          "prior_fraud_flags": 2,
+          "claim_frequency_per_year": 2.4,
+          "total_prior_payouts": 87000.0,
+          "prior_claims": [
+            {
+              "claim_id": "CLM-2025-088",
+              "loss_date": "2025-09-14",
+              "loss_type": "major_collision",
+              "claimed_amount": 41000.0,
+              "outcome": "paid",
+              "fraud_flag": true
+            },
+            {
+              "claim_id": "CLM-2025-012",
+              "loss_date": "2025-02-20",
+              "loss_type": "major_collision",
+              "claimed_amount": 38000.0,
+              "outcome": "paid",
+              "fraud_flag": false
+            },
+            {
+              "claim_id": "CLM-2024-441",
+              "loss_date": "2024-07-05",
+              "loss_type": "major_collision",
+              "claimed_amount": 29500.0,
+              "outcome": "denied",
+              "fraud_flag": true
+            }
+          ],
+          "known_addresses": [
+            "412 Maple St, Chicago IL",
+            "88 Oak Ave, Evanston IL"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "1HGCM82633A004352",
+              "year": 2022,
+              "make": "Honda",
+              "model": "Accord"
+            },
+            {
+              "vin": "5NMSH13E48H100001",
+              "year": 2021,
+              "make": "Hyundai",
+              "model": "Tucson"
+            }
+          ],
+          "associated_policies": [
+            "POL-99-1234",
+            "POL-99-5678",
+            "POL-99-0011"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0093",
+          "provider_type": "repair_shop",
+          "provider_name": "FastFix Auto Body",
+          "license_status": "under_investigation",
+          "total_claims_served": 312,
+          "average_billing_amount": 14800.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 2.96,
+          "flagged_claims_count": 47,
+          "geographic_service_area": "Chicago Metro",
+          "claims_outside_service_area": 18,
+          "referral_connections": [
+            {
+              "provider_id": "PRV-0200",
+              "provider_name": "QuickMed Clinic",
+              "shared_claims": 28
+            },
+            {
+              "provider_id": "PRV-0301",
+              "provider_name": "Speedy Parts & Service",
+              "shared_claims": 14
+            }
+          ]
+        },
+        "vehicle_valuation": {
+          "vin": "1HGCM82633A004352",
+          "year": 2022,
+          "make": "Honda",
+          "model": "Accord",
+          "market_value": 29500.0,
+          "salvage_value": 7375.0,
+          "total_loss_threshold": 22125.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [
+            {
+              "claim_id": "CLM-2025-088",
+              "date": "2025-09-14",
+              "amount": 41000.0
+            }
+          ],
+          "title_history": [
+            "clean",
+            "salvage",
+            "rebuilt"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-99-1234",
+          "inception_date": "2026-03-28",
+          "expiration_date": "2027-03-28",
+          "days_since_inception": 14,
+          "days_until_expiration": 351,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 1000000.0,
+            "collision": 50000.0,
+            "medical": 100000.0
+          },
+          "premium_amount": 1800.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-03-28",
+              "amount": 1800.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [
+            {
+              "change_date": "2026-04-01",
+              "change_type": "coverage_upgrade",
+              "details": "Collision limit increased from $25K to $50K \u2014 10 days before loss date"
+            }
+          ],
+          "vehicles_on_policy": [
+            {
+              "vin": "1HGCM82633A004352",
+              "date_added": "2026-03-28"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": [
+            {
+              "lapse_date": "2025-12-01",
+              "reinstate_date": "2026-01-15"
+            }
+          ]
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.060393"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-001",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 100.0,
+            "severity": "critical",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Prior fraud flags on claimant",
+                "value": "2",
+                "benchmark": "0",
+                "severity": "major",
+                "source": "claimant_history"
+              },
+              {
+                "indicator": "High prior claim frequency",
+                "value": "4",
+                "benchmark": "< 2",
+                "severity": "moderate",
+                "source": "claimant_history"
+              },
+              {
+                "indicator": "Prior claims on same VIN",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "High claim frequency",
+                "value": "2.4/year",
+                "benchmark": "< 1.0/year",
+                "severity": "moderate",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 2 prior fraud flag(s), 4 total prior claims, frequency 2.4/yr, and 1 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": []
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 90.0,
+            "severity": "critical",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy inception proximity",
+                "value": "14 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "major",
+                "source": "policy_details"
+              },
+              {
+                "indicator": "Coverage upgrade shortly before loss",
+                "value": "Collision limit increased from $25K to $50K \u2014 10 days before loss date",
+                "benchmark": "No recent changes",
+                "severity": "major",
+                "source": "policy_details"
+              },
+              {
+                "indicator": "Prior policy lapse and reinstatement",
+                "value": "Lapsed 2025-12-01",
+                "benchmark": "No lapse history",
+                "severity": "moderate",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 14 days old at time of loss. Coverage upgrade recorded shortly before loss. Prior lapse history detected.",
+            "exculpatory_factors": []
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 65.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount exceeds vehicle market value",
+                "value": "$42,000",
+                "benchmark": "Market value: $29,500",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "Provider billing ratio elevated",
+                "value": "2.96x",
+                "benchmark": "< 1.5x",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Claimed amount $42,000 vs. vehicle market value $29,500 and regional median repair cost $15,000 for major_collision.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 95.0,
+            "severity": "critical",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider license status",
+                "value": "under_investigation",
+                "benchmark": "active",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Provider billing ratio",
+                "value": "2.96x regional average",
+                "benchmark": "< 1.5x",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Cross-provider referral connections",
+                "value": "2 connection(s), 28 shared claims",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Claims filed outside service area",
+                "value": "18",
+                "benchmark": "< 5",
+                "severity": "minor",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: under_investigation. Billing ratio: 2.96x. Referral connections: 2. Claims outside area: 18.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 88.0,
+        "confidence": "high",
+        "priority_tier": "critical",
+        "patterns_flagged": 4,
+        "narrative": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr,",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr, and 0 prior claim(s) on this specific VIN.\", \"exculpatory_factors\": [\"No matching VIN, claimant, or description indicators\"]}"
+    },
+    {
+      "claim_id": "CLM-2026-002",
+      "enriched": {
+        "claim_id": "CLM-2026-002",
+        "raw_claim": {
+          "claim_id": "CLM-2026-002",
+          "claimant": {
+            "id": "C-4821",
+            "name": "Marcus Rivera"
+          },
+          "provider": {
+            "id": "PRV-0093",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "1HGCM82633A004352",
+            "year": 2022,
+            "make": "Honda",
+            "model": "Accord"
+          },
+          "policy_number": "POL-99-5678",
+          "claimed_amount": 38500.0,
+          "loss_date": "2026-04-13",
+          "loss_type": "major_collision",
+          "description": "Rear-end collision on same vehicle, filed under second policy 2 days after CLM-2026-001."
+        },
+        "claimant_history": {
+          "claimant_id": "C-4821",
+          "total_prior_claims": 4,
+          "prior_fraud_flags": 2,
+          "claim_frequency_per_year": 2.4,
+          "total_prior_payouts": 87000.0,
+          "prior_claims": [
+            {
+              "claim_id": "CLM-2025-088",
+              "loss_date": "2025-09-14",
+              "loss_type": "major_collision",
+              "claimed_amount": 41000.0,
+              "outcome": "paid",
+              "fraud_flag": true
+            },
+            {
+              "claim_id": "CLM-2025-012",
+              "loss_date": "2025-02-20",
+              "loss_type": "major_collision",
+              "claimed_amount": 38000.0,
+              "outcome": "paid",
+              "fraud_flag": false
+            },
+            {
+              "claim_id": "CLM-2024-441",
+              "loss_date": "2024-07-05",
+              "loss_type": "major_collision",
+              "claimed_amount": 29500.0,
+              "outcome": "denied",
+              "fraud_flag": true
+            }
+          ],
+          "known_addresses": [
+            "412 Maple St, Chicago IL",
+            "88 Oak Ave, Evanston IL"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "1HGCM82633A004352",
+              "year": 2022,
+              "make": "Honda",
+              "model": "Accord"
+            },
+            {
+              "vin": "5NMSH13E48H100001",
+              "year": 2021,
+              "make": "Hyundai",
+              "model": "Tucson"
+            }
+          ],
+          "associated_policies": [
+            "POL-99-1234",
+            "POL-99-5678",
+            "POL-99-0011"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0093",
+          "provider_type": "repair_shop",
+          "provider_name": "FastFix Auto Body",
+          "license_status": "under_investigation",
+          "total_claims_served": 312,
+          "average_billing_amount": 14800.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 2.96,
+          "flagged_claims_count": 47,
+          "geographic_service_area": "Chicago Metro",
+          "claims_outside_service_area": 18,
+          "referral_connections": [
+            {
+              "provider_id": "PRV-0200",
+              "provider_name": "QuickMed Clinic",
+              "shared_claims": 28
+            },
+            {
+              "provider_id": "PRV-0301",
+              "provider_name": "Speedy Parts & Service",
+              "shared_claims": 14
+            }
+          ]
+        },
+        "vehicle_valuation": {
+          "vin": "1HGCM82633A004352",
+          "year": 2022,
+          "make": "Honda",
+          "model": "Accord",
+          "market_value": 29500.0,
+          "salvage_value": 7375.0,
+          "total_loss_threshold": 22125.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [
+            {
+              "claim_id": "CLM-2025-088",
+              "date": "2025-09-14",
+              "amount": 41000.0
+            }
+          ],
+          "title_history": [
+            "clean",
+            "salvage",
+            "rebuilt"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-99-5678",
+          "inception_date": "2026-01-15",
+          "expiration_date": "2027-01-15",
+          "days_since_inception": 88,
+          "days_until_expiration": 277,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 500000.0,
+            "collision": 40000.0,
+            "medical": 50000.0
+          },
+          "premium_amount": 1400.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-15",
+              "amount": 1400.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-02-15",
+              "amount": 1400.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-03-15",
+              "amount": 1400.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "1HGCM82633A004352",
+              "date_added": "2026-01-15"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.041291"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-002",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 100.0,
+            "severity": "critical",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Prior fraud flags on claimant",
+                "value": "2",
+                "benchmark": "0",
+                "severity": "major",
+                "source": "claimant_history"
+              },
+              {
+                "indicator": "High prior claim frequency",
+                "value": "4",
+                "benchmark": "< 2",
+                "severity": "moderate",
+                "source": "claimant_history"
+              },
+              {
+                "indicator": "Prior claims on same VIN",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "High claim frequency",
+                "value": "2.4/year",
+                "benchmark": "< 1.0/year",
+                "severity": "moderate",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 2 prior fraud flag(s), 4 total prior claims, frequency 2.4/yr, and 1 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": []
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy well-established",
+                "value": "88 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "clean",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 88 days old at time of loss. ",
+            "exculpatory_factors": [
+              "Long-standing policy with no changes"
+            ]
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 65.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount exceeds vehicle market value",
+                "value": "$38,500",
+                "benchmark": "Market value: $29,500",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "Provider billing ratio elevated",
+                "value": "2.96x",
+                "benchmark": "< 1.5x",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Claimed amount $38,500 vs. vehicle market value $29,500 and regional median repair cost $15,000 for major_collision.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 95.0,
+            "severity": "critical",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider license status",
+                "value": "under_investigation",
+                "benchmark": "active",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Provider billing ratio",
+                "value": "2.96x regional average",
+                "benchmark": "< 1.5x",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Cross-provider referral connections",
+                "value": "2 connection(s), 28 shared claims",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Claims filed outside service area",
+                "value": "18",
+                "benchmark": "< 5",
+                "severity": "minor",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: under_investigation. Billing ratio: 2.96x. Referral connections: 2. Claims outside area: 18.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 70.0,
+        "confidence": "high",
+        "priority_tier": "high",
+        "patterns_flagged": 3,
+        "narrative": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr,",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr, and 0 prior claim(s) on this specific VIN.\", \"exculpatory_factors\": [\"No matching VIN, claimant, or description indicators\"]}"
+    },
+    {
+      "claim_id": "CLM-2026-009",
+      "enriched": {
+        "claim_id": "CLM-2026-009",
+        "raw_claim": {
+          "claim_id": "CLM-2026-009",
+          "claimant": {
+            "id": "C-802",
+            "name": "James Okafor"
+          },
+          "provider": {
+            "id": "PRV-0093",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "WBA3A5C50DF000109",
+            "year": 2020,
+            "make": "BMW",
+            "model": "3 Series"
+          },
+          "policy_number": "POL-99-8844",
+          "claimed_amount": 35500.0,
+          "loss_date": "2026-04-06",
+          "loss_type": "major_collision",
+          "description": "Intersection collision. Sent to FastFix Auto Body (PRV-0093) \u00e2\u20ac\u201d same shop appearing on 3 other batch claims."
+        },
+        "claimant_history": {
+          "claimant_id": "C-802",
+          "total_prior_claims": 2,
+          "prior_fraud_flags": 1,
+          "claim_frequency_per_year": 1.3,
+          "total_prior_payouts": 62000.0,
+          "prior_claims": [
+            {
+              "claim_id": "CLM-2025-301",
+              "loss_date": "2025-07-18",
+              "loss_type": "major_collision",
+              "claimed_amount": 33000.0,
+              "outcome": "paid",
+              "fraud_flag": true
+            }
+          ],
+          "known_addresses": [
+            "22 Riverside Dr, Chicago IL"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "WBA3A5C50DF000109",
+              "year": 2020,
+              "make": "BMW",
+              "model": "3 Series"
+            }
+          ],
+          "associated_policies": [
+            "POL-99-8844"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0093",
+          "provider_type": "repair_shop",
+          "provider_name": "FastFix Auto Body",
+          "license_status": "under_investigation",
+          "total_claims_served": 312,
+          "average_billing_amount": 14800.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 2.96,
+          "flagged_claims_count": 47,
+          "geographic_service_area": "Chicago Metro",
+          "claims_outside_service_area": 18,
+          "referral_connections": [
+            {
+              "provider_id": "PRV-0200",
+              "provider_name": "QuickMed Clinic",
+              "shared_claims": 28
+            },
+            {
+              "provider_id": "PRV-0301",
+              "provider_name": "Speedy Parts & Service",
+              "shared_claims": 14
+            }
+          ]
+        },
+        "vehicle_valuation": {
+          "vin": "WBA3A5C50DF000109",
+          "year": 2020,
+          "make": "BMW",
+          "model": "3 Series",
+          "market_value": 28000.0,
+          "salvage_value": 7000.0,
+          "total_loss_threshold": 21000.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-99-8844",
+          "inception_date": "2026-03-24",
+          "expiration_date": "2027-03-24",
+          "days_since_inception": 18,
+          "days_until_expiration": 347,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 500000.0,
+            "collision": 40000.0,
+            "medical": 75000.0
+          },
+          "premium_amount": 1600.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-03-24",
+              "amount": 1600.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "WBA3A5C50DF000109",
+              "date_added": "2026-03-24"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.058678"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-009",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 55.0,
+            "severity": "notable",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Prior fraud flags on claimant",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "major",
+                "source": "claimant_history"
+              },
+              {
+                "indicator": "Prior claims on record",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 1 prior fraud flag(s), 2 total prior claims, frequency 1.3/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": []
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 50.0,
+            "severity": "notable",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy inception proximity",
+                "value": "18 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "major",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 18 days old at time of loss. ",
+            "exculpatory_factors": []
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 65.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount exceeds vehicle market value",
+                "value": "$35,500",
+                "benchmark": "Market value: $28,000",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "Provider billing ratio elevated",
+                "value": "2.96x",
+                "benchmark": "< 1.5x",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Claimed amount $35,500 vs. vehicle market value $28,000 and regional median repair cost $15,000 for major_collision.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 95.0,
+            "severity": "critical",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider license status",
+                "value": "under_investigation",
+                "benchmark": "active",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Provider billing ratio",
+                "value": "2.96x regional average",
+                "benchmark": "< 1.5x",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Cross-provider referral connections",
+                "value": "2 connection(s), 28 shared claims",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Claims filed outside service area",
+                "value": "18",
+                "benchmark": "< 5",
+                "severity": "minor",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: under_investigation. Billing ratio: 2.96x. Referral connections: 2. Claims outside area: 18.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 66.5,
+        "confidence": "high",
+        "priority_tier": "high",
+        "patterns_flagged": 4,
+        "narrative": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr,",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr, and 0 prior claim(s) on this specific VIN.\", \"exculpatory_factors\": [\"No matching VIN, claimant, or description indicators\"]}"
+    },
+    {
+      "claim_id": "CLM-2026-003",
+      "enriched": {
+        "claim_id": "CLM-2026-003",
+        "raw_claim": {
+          "claim_id": "CLM-2026-003",
+          "claimant": {
+            "id": "C-5502",
+            "name": "Diana Kowalski"
+          },
+          "provider": {
+            "id": "PRV-0200",
+            "type": "medical"
+          },
+          "vehicle": {
+            "vin": "2T1BR32E61C002711",
+            "year": 2019,
+            "make": "Toyota",
+            "model": "Camry"
+          },
+          "policy_number": "POL-99-7890",
+          "claimed_amount": 55000.0,
+          "loss_date": "2026-04-07",
+          "loss_type": "comprehensive",
+          "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury requiring surgery."
+        },
+        "claimant_history": {
+          "claimant_id": "C-5502",
+          "total_prior_claims": 2,
+          "prior_fraud_flags": 1,
+          "claim_frequency_per_year": 1.1,
+          "total_prior_payouts": 62000.0,
+          "prior_claims": [
+            {
+              "claim_id": "CLM-2025-199",
+              "loss_date": "2025-03-12",
+              "loss_type": "comprehensive",
+              "claimed_amount": 48000.0,
+              "outcome": "paid",
+              "fraud_flag": true
+            }
+          ],
+          "known_addresses": [
+            "77 Park Ave, Detroit MI"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "2T1BR32E61C002711",
+              "year": 2019,
+              "make": "Toyota",
+              "model": "Camry"
+            }
+          ],
+          "associated_policies": [
+            "POL-99-7890"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0200",
+          "provider_type": "medical",
+          "provider_name": "QuickMed Injury Clinic",
+          "license_status": "active",
+          "total_claims_served": 198,
+          "average_billing_amount": 15500.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 3.1,
+          "flagged_claims_count": 31,
+          "geographic_service_area": "Detroit Metro",
+          "claims_outside_service_area": 22,
+          "referral_connections": [
+            {
+              "provider_id": "PRV-0093",
+              "provider_name": "FastFix Auto Body",
+              "shared_claims": 28
+            },
+            {
+              "provider_id": "PRV-0301",
+              "provider_name": "Speedy Parts & Service",
+              "shared_claims": 11
+            }
+          ]
+        },
+        "vehicle_valuation": {
+          "vin": "2T1BR32E61C002711",
+          "year": 2019,
+          "make": "Toyota",
+          "model": "Camry",
+          "market_value": 18000.0,
+          "salvage_value": 4500.0,
+          "total_loss_threshold": 13500.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-99-7890",
+          "inception_date": "2026-03-17",
+          "expiration_date": "2027-03-17",
+          "days_since_inception": 21,
+          "days_until_expiration": 344,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 1000000.0,
+            "collision": 60000.0,
+            "medical": 150000.0
+          },
+          "premium_amount": 2100.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-03-17",
+              "amount": 2100.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [
+            {
+              "change_date": "2026-03-20",
+              "change_type": "medical_coverage_upgrade",
+              "details": "Medical limit raised from $50K to $150K \u2014 18 days before loss"
+            }
+          ],
+          "vehicles_on_policy": [
+            {
+              "vin": "2T1BR32E61C002711",
+              "date_added": "2026-03-17"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.049192"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-003",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 55.0,
+            "severity": "notable",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Prior fraud flags on claimant",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "major",
+                "source": "claimant_history"
+              },
+              {
+                "indicator": "Prior claims on record",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 1 prior fraud flag(s), 2 total prior claims, frequency 1.1/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": []
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 75.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy inception proximity",
+                "value": "21 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "major",
+                "source": "policy_details"
+              },
+              {
+                "indicator": "Coverage upgrade shortly before loss",
+                "value": "Medical limit raised from $50K to $150K \u2014 18 days before loss",
+                "benchmark": "No recent changes",
+                "severity": "major",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 21 days old at time of loss. Coverage upgrade recorded shortly before loss. ",
+            "exculpatory_factors": []
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 65.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount exceeds vehicle market value",
+                "value": "$55,000",
+                "benchmark": "Market value: $18,000",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "Provider billing ratio elevated",
+                "value": "3.10x",
+                "benchmark": "< 1.5x",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Claimed amount $55,000 vs. vehicle market value $18,000 and regional median repair cost $12,000 for comprehensive.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 55.0,
+            "severity": "notable",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider billing ratio",
+                "value": "3.10x regional average",
+                "benchmark": "< 1.5x",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Cross-provider referral connections",
+                "value": "2 connection(s), 28 shared claims",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Claims filed outside service area",
+                "value": "22",
+                "benchmark": "< 5",
+                "severity": "minor",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 3.10x. Referral connections: 2. Claims outside area: 22.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 61.5,
+        "confidence": "high",
+        "priority_tier": "high",
+        "patterns_flagged": 4,
+        "narrative": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr,",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr, and 0 prior claim(s) on this specific VIN.\", \"exculpatory_factors\": [\"No matching VIN, claimant, or description indicators\"]}"
+    },
+    {
+      "claim_id": "CLM-2026-012",
+      "enriched": {
+        "claim_id": "CLM-2026-012",
+        "raw_claim": {
+          "claim_id": "CLM-2026-012",
+          "claimant": {
+            "id": "C-903",
+            "name": "Amy Johnson"
+          },
+          "provider": {
+            "id": "PRV-0200",
+            "type": "medical"
+          },
+          "vehicle": {
+            "vin": "5J8TB3H56GL100012",
+            "year": 2023,
+            "make": "Acura",
+            "model": "RDX"
+          },
+          "policy_number": "POL-99-0012",
+          "claimed_amount": 41000.0,
+          "loss_date": "2026-04-05",
+          "loss_type": "comprehensive",
+          "description": "Rear-end collision. Referred to QuickMed Injury Clinic (PRV-0200) \u00e2\u20ac\u201d same clinic as CLM-2026-003. Alleged spinal injury."
+        },
+        "claimant_history": {
+          "claimant_id": "C-903",
+          "total_prior_claims": 1,
+          "prior_fraud_flags": 1,
+          "claim_frequency_per_year": 0.8,
+          "total_prior_payouts": 39000.0,
+          "prior_claims": [
+            {
+              "claim_id": "CLM-2025-422",
+              "loss_date": "2025-10-03",
+              "loss_type": "comprehensive",
+              "claimed_amount": 36500.0,
+              "outcome": "paid",
+              "fraud_flag": true
+            }
+          ],
+          "known_addresses": [
+            "3301 Oak Park Blvd, Detroit MI"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "5J8TB3H56GL100012",
+              "year": 2023,
+              "make": "Acura",
+              "model": "RDX"
+            }
+          ],
+          "associated_policies": [
+            "POL-99-0012"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0200",
+          "provider_type": "medical",
+          "provider_name": "QuickMed Injury Clinic",
+          "license_status": "active",
+          "total_claims_served": 198,
+          "average_billing_amount": 15500.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 3.1,
+          "flagged_claims_count": 31,
+          "geographic_service_area": "Detroit Metro",
+          "claims_outside_service_area": 22,
+          "referral_connections": [
+            {
+              "provider_id": "PRV-0093",
+              "provider_name": "FastFix Auto Body",
+              "shared_claims": 28
+            },
+            {
+              "provider_id": "PRV-0301",
+              "provider_name": "Speedy Parts & Service",
+              "shared_claims": 11
+            }
+          ]
+        },
+        "vehicle_valuation": {
+          "vin": "5J8TB3H56GL100012",
+          "year": 2023,
+          "make": "Acura",
+          "model": "RDX",
+          "market_value": 38000.0,
+          "salvage_value": 9500.0,
+          "total_loss_threshold": 28500.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-99-0012",
+          "inception_date": "2026-03-23",
+          "expiration_date": "2027-03-23",
+          "days_since_inception": 19,
+          "days_until_expiration": 346,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 750000.0,
+            "collision": 45000.0,
+            "medical": 150000.0
+          },
+          "premium_amount": 1950.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-03-23",
+              "amount": 1950.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [
+            {
+              "change_date": "2026-03-26",
+              "change_type": "medical_coverage_upgrade",
+              "details": "Medical limit raised from $50K to $150K \u2014 10 days before loss"
+            }
+          ],
+          "vehicles_on_policy": [
+            {
+              "vin": "5J8TB3H56GL100012",
+              "date_added": "2026-03-23"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.098504"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-012",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 55.0,
+            "severity": "notable",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Prior fraud flags on claimant",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "major",
+                "source": "claimant_history"
+              },
+              {
+                "indicator": "Prior claims on record",
+                "value": "1",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 1 prior fraud flag(s), 1 total prior claims, frequency 0.8/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": []
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 75.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy inception proximity",
+                "value": "19 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "major",
+                "source": "policy_details"
+              },
+              {
+                "indicator": "Coverage upgrade shortly before loss",
+                "value": "Medical limit raised from $50K to $150K \u2014 10 days before loss",
+                "benchmark": "No recent changes",
+                "severity": "major",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 19 days old at time of loss. Coverage upgrade recorded shortly before loss. ",
+            "exculpatory_factors": []
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 65.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount exceeds vehicle market value",
+                "value": "$41,000",
+                "benchmark": "Market value: $38,000",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "Provider billing ratio elevated",
+                "value": "3.10x",
+                "benchmark": "< 1.5x",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Claimed amount $41,000 vs. vehicle market value $38,000 and regional median repair cost $12,000 for comprehensive.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 55.0,
+            "severity": "notable",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider billing ratio",
+                "value": "3.10x regional average",
+                "benchmark": "< 1.5x",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Cross-provider referral connections",
+                "value": "2 connection(s), 28 shared claims",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Claims filed outside service area",
+                "value": "22",
+                "benchmark": "< 5",
+                "severity": "minor",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 3.10x. Referral connections: 2. Claims outside area: 22.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 61.5,
+        "confidence": "high",
+        "priority_tier": "high",
+        "patterns_flagged": 4,
+        "narrative": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr,",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr, and 0 prior claim(s) on this specific VIN.\", \"exculpatory_factors\": [\"No matching VIN, claimant, or description indicators\"]}"
+    },
+    {
+      "claim_id": "CLM-2026-005",
+      "enriched": {
+        "claim_id": "CLM-2026-005",
+        "raw_claim": {
+          "claim_id": "CLM-2026-005",
+          "claimant": {
+            "id": "C-103",
+            "name": "Priya Menon"
+          },
+          "provider": {
+            "id": "PRV-0093",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "5XYKT3A62DG143001",
+            "year": 2020,
+            "make": "Kia",
+            "model": "Sorento"
+          },
+          "policy_number": "POL-99-2211",
+          "claimed_amount": 29000.0,
+          "loss_date": "2026-04-04",
+          "loss_type": "major_collision",
+          "description": "Total loss claimed. Same repair shop as CLM-2026-001 and CLM-2026-002. Claimed amount exceeds vehicle market value."
+        },
+        "claimant_history": {
+          "claimant_id": "C-103",
+          "total_prior_claims": 2,
+          "prior_fraud_flags": 0,
+          "claim_frequency_per_year": 0.9,
+          "total_prior_payouts": 15000.0,
+          "prior_claims": [],
+          "known_addresses": [
+            "5511 Lakeview Dr, Milwaukee WI"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "5XYKT3A62DG143001",
+              "year": 2020,
+              "make": "Kia",
+              "model": "Sorento"
+            }
+          ],
+          "associated_policies": [
+            "POL-99-2211"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0093",
+          "provider_type": "repair_shop",
+          "provider_name": "FastFix Auto Body",
+          "license_status": "under_investigation",
+          "total_claims_served": 312,
+          "average_billing_amount": 14800.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 2.96,
+          "flagged_claims_count": 47,
+          "geographic_service_area": "Chicago Metro",
+          "claims_outside_service_area": 18,
+          "referral_connections": [
+            {
+              "provider_id": "PRV-0200",
+              "provider_name": "QuickMed Clinic",
+              "shared_claims": 28
+            },
+            {
+              "provider_id": "PRV-0301",
+              "provider_name": "Speedy Parts & Service",
+              "shared_claims": 14
+            }
+          ]
+        },
+        "vehicle_valuation": {
+          "vin": "5XYKT3A62DG143001",
+          "year": 2020,
+          "make": "Kia",
+          "model": "Sorento",
+          "market_value": 21500.0,
+          "salvage_value": 5375.0,
+          "total_loss_threshold": 16125.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-99-2211",
+          "inception_date": "2024-01-10",
+          "expiration_date": "2027-01-10",
+          "days_since_inception": 814,
+          "days_until_expiration": 281,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 500000.0,
+            "collision": 30000.0,
+            "medical": 50000.0
+          },
+          "premium_amount": 1350.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-10",
+              "amount": 1350.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-04-10",
+              "amount": 1350.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "5XYKT3A62DG143001",
+              "date_added": "2024-01-10"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": [
+            {
+              "lapse_date": "2025-11-10",
+              "reinstate_date": "2026-03-10"
+            }
+          ]
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.050923"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-005",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "No duplicate indicators found",
+                "value": "0",
+                "benchmark": "0",
+                "severity": "clean",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 0 prior fraud flag(s), 2 total prior claims, frequency 0.9/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": [
+              "No matching VIN, claimant, or description indicators"
+            ]
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 15.0,
+            "severity": "minor",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Prior policy lapse and reinstatement",
+                "value": "Lapsed 2025-11-10",
+                "benchmark": "No lapse history",
+                "severity": "moderate",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 814 days old at time of loss. Prior lapse history detected.",
+            "exculpatory_factors": []
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 65.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount exceeds vehicle market value",
+                "value": "$29,000",
+                "benchmark": "Market value: $21,500",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "Provider billing ratio elevated",
+                "value": "2.96x",
+                "benchmark": "< 1.5x",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Claimed amount $29,000 vs. vehicle market value $21,500 and regional median repair cost $15,000 for major_collision.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 95.0,
+            "severity": "critical",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider license status",
+                "value": "under_investigation",
+                "benchmark": "active",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Provider billing ratio",
+                "value": "2.96x regional average",
+                "benchmark": "< 1.5x",
+                "severity": "major",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Cross-provider referral connections",
+                "value": "2 connection(s), 28 shared claims",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "provider_network"
+              },
+              {
+                "indicator": "Claims filed outside service area",
+                "value": "18",
+                "benchmark": "< 5",
+                "severity": "minor",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: under_investigation. Billing ratio: 2.96x. Referral connections: 2. Claims outside area: 18.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 43.0,
+        "confidence": "medium",
+        "priority_tier": "medium",
+        "patterns_flagged": 2,
+        "narrative": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr,",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": "{\"pattern\": \"duplicate_similar\", \"score\": 0, \"severity\": \"clean\", \"evidence\": [{\"indicator\": \"No duplicate indicators found\", \"value\": \"0\", \"benchmark\": \"0\", \"severity\": \"clean\", \"source\": \"claimant_history\"}], \"reasoning\": \"Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.0/yr, and 0 prior claim(s) on this specific VIN.\", \"exculpatory_factors\": [\"No matching VIN, claimant, or description indicators\"]}"
+    },
+    {
+      "claim_id": "CLM-2026-007",
+      "enriched": {
+        "claim_id": "CLM-2026-007",
+        "raw_claim": {
+          "claim_id": "CLM-2026-007",
+          "claimant": {
+            "id": "C-601",
+            "name": "Elena Vasquez"
+          },
+          "provider": {
+            "id": "PRV-0400",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "1FTBW2CM4JKA12345",
+            "year": 2018,
+            "make": "Ford",
+            "model": "Transit"
+          },
+          "policy_number": "POL-88-4411",
+          "claimed_amount": 48000.0,
+          "loss_date": "2026-04-10",
+          "loss_type": "major_collision",
+          "description": "Commercial fleet vehicle. Alleged total loss. Coverage upgrade filed 68 hours before incident."
+        },
+        "claimant_history": {
+          "claimant_id": "C-601",
+          "total_prior_claims": 1,
+          "prior_fraud_flags": 0,
+          "claim_frequency_per_year": 0.5,
+          "total_prior_payouts": 12000.0,
+          "prior_claims": [],
+          "known_addresses": [
+            "9 Commerce Blvd, Houston TX"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "1FTBW2CM4JKA12345",
+              "year": 2018,
+              "make": "Ford",
+              "model": "Transit"
+            }
+          ],
+          "associated_policies": [
+            "POL-88-4411"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0400",
+          "provider_type": "repair_shop",
+          "provider_name": "TexasTruck Repair Center",
+          "license_status": "active",
+          "total_claims_served": 144,
+          "average_billing_amount": 12000.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 2.4,
+          "flagged_claims_count": 9,
+          "geographic_service_area": "Houston Metro",
+          "claims_outside_service_area": 4,
+          "referral_connections": []
+        },
+        "vehicle_valuation": {
+          "vin": "1FTBW2CM4JKA12345",
+          "year": 2018,
+          "make": "Ford",
+          "model": "Transit",
+          "market_value": 31000.0,
+          "salvage_value": 7750.0,
+          "total_loss_threshold": 23250.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-88-4411",
+          "inception_date": "2025-01-15",
+          "expiration_date": "2027-01-15",
+          "days_since_inception": 460,
+          "days_until_expiration": 280,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 2000000.0,
+            "collision": 100000.0,
+            "medical": 200000.0
+          },
+          "premium_amount": 3200.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-15",
+              "amount": 3200.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-04-15",
+              "amount": 3200.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [
+            {
+              "change_date": "2026-04-07",
+              "change_type": "collision_coverage_upgrade",
+              "details": "Fleet collision limit upgraded from $50K to $100K \u2014 68 hours before loss on Apr 10"
+            }
+          ],
+          "vehicles_on_policy": [
+            {
+              "vin": "1FTBW2CM4JKA12345",
+              "date_added": "2025-01-15"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.055666"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-007",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "No duplicate indicators found",
+                "value": "0",
+                "benchmark": "0",
+                "severity": "clean",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 0 prior fraud flag(s), 1 total prior claims, frequency 0.5/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": [
+              "No matching VIN, claimant, or description indicators"
+            ]
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 25.0,
+            "severity": "minor",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Coverage upgrade shortly before loss",
+                "value": "Fleet collision limit upgraded from $50K to $100K \u2014 68 hours before loss on Apr 10",
+                "benchmark": "No recent changes",
+                "severity": "major",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 460 days old at time of loss. Coverage upgrade recorded shortly before loss. ",
+            "exculpatory_factors": []
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 65.0,
+            "severity": "significant",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount exceeds vehicle market value",
+                "value": "$48,000",
+                "benchmark": "Market value: $31,000",
+                "severity": "major",
+                "source": "vehicle_valuation"
+              },
+              {
+                "indicator": "Provider billing ratio elevated",
+                "value": "2.40x",
+                "benchmark": "< 1.5x",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Claimed amount $48,000 vs. vehicle market value $31,000 and regional median repair cost $15,000 for major_collision.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 30.0,
+            "severity": "minor",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider billing ratio",
+                "value": "2.40x regional average",
+                "benchmark": "< 1.5x",
+                "severity": "major",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 2.40x. Referral connections: 0. Claims outside area: 4.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 28.8,
+        "confidence": "low",
+        "priority_tier": "low",
+        "patterns_flagged": 1,
+        "narrative": "No significant fraud indicators found across the 4 patterns.",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": null
+    },
+    {
+      "claim_id": "CLM-2026-004",
+      "enriched": {
+        "claim_id": "CLM-2026-004",
+        "raw_claim": {
+          "claim_id": "CLM-2026-004",
+          "claimant": {
+            "id": "C-201",
+            "name": "Thomas Bennett"
+          },
+          "provider": {
+            "id": "PRV-0301",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "3VWFE21C04M000001",
+            "year": 2021,
+            "make": "Volkswagen",
+            "model": "Jetta"
+          },
+          "policy_number": "POL-200-4432",
+          "claimed_amount": 8200.0,
+          "loss_date": "2026-04-09",
+          "loss_type": "minor_collision",
+          "description": "Parking lot collision with stationary object. Repair at local shop."
+        },
+        "claimant_history": {
+          "claimant_id": "C-201",
+          "total_prior_claims": 1,
+          "prior_fraud_flags": 0,
+          "claim_frequency_per_year": 0.5,
+          "total_prior_payouts": 6200.0,
+          "prior_claims": [],
+          "known_addresses": [
+            "330 Elm St, Indianapolis IN"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "3VWFE21C04M000001",
+              "year": 2021,
+              "make": "Volkswagen",
+              "model": "Jetta"
+            }
+          ],
+          "associated_policies": [
+            "POL-200-4432"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0301",
+          "provider_type": "repair_shop",
+          "provider_name": "Speedy Parts & Service",
+          "license_status": "active",
+          "total_claims_served": 87,
+          "average_billing_amount": 7600.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 1.52,
+          "flagged_claims_count": 8,
+          "geographic_service_area": "Indianapolis Metro",
+          "claims_outside_service_area": 3,
+          "referral_connections": [
+            {
+              "provider_id": "PRV-0093",
+              "provider_name": "FastFix Auto Body",
+              "shared_claims": 14
+            },
+            {
+              "provider_id": "PRV-0200",
+              "provider_name": "QuickMed Injury Clinic",
+              "shared_claims": 11
+            }
+          ]
+        },
+        "vehicle_valuation": {
+          "vin": "3VWFE21C04M000001",
+          "year": 2021,
+          "make": "Volkswagen",
+          "model": "Jetta",
+          "market_value": 22000.0,
+          "salvage_value": 5500.0,
+          "total_loss_threshold": 16500.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-200-4432",
+          "inception_date": "2023-06-01",
+          "expiration_date": "2027-06-01",
+          "days_since_inception": 1056,
+          "days_until_expiration": 404,
+          "coverage_type": "collision",
+          "coverage_limits": {
+            "liability": 300000.0,
+            "collision": 25000.0,
+            "medical": 30000.0
+          },
+          "premium_amount": 980.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-01",
+              "amount": 980.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-04-01",
+              "amount": 980.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "3VWFE21C04M000001",
+              "date_added": "2023-06-01"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.053559"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-004",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "No duplicate indicators found",
+                "value": "0",
+                "benchmark": "0",
+                "severity": "clean",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 0 prior fraud flag(s), 1 total prior claims, frequency 0.5/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": [
+              "No matching VIN, claimant, or description indicators"
+            ]
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy well-established",
+                "value": "1056 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "clean",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 1056 days old at time of loss. ",
+            "exculpatory_factors": [
+              "Long-standing policy with no changes"
+            ]
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 20.0,
+            "severity": "minor",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount above benchmark",
+                "value": "$8,200",
+                "benchmark": "Median: $4,200",
+                "severity": "moderate",
+                "source": "vehicle_valuation"
+              }
+            ],
+            "reasoning": "Claimed amount $8,200 vs. vehicle market value $22,000 and regional median repair cost $4,200 for minor_collision.",
+            "exculpatory_factors": []
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 15.0,
+            "severity": "minor",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Cross-provider referral connections",
+                "value": "2 connection(s), 14 shared claims",
+                "benchmark": "0",
+                "severity": "moderate",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 1.52x. Referral connections: 2. Claims outside area: 3.",
+            "exculpatory_factors": []
+          }
+        },
+        "composite_score": 8.8,
+        "confidence": "low",
+        "priority_tier": "low",
+        "patterns_flagged": 0,
+        "narrative": "No significant fraud indicators found across the 4 patterns.",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": null
+    },
+    {
+      "claim_id": "CLM-2026-006",
+      "enriched": {
+        "claim_id": "CLM-2026-006",
+        "raw_claim": {
+          "claim_id": "CLM-2026-006",
+          "claimant": {
+            "id": "C-104",
+            "name": "Robert Kim"
+          },
+          "provider": {
+            "id": "PRV-0150",
+            "type": "medical"
+          },
+          "vehicle": {
+            "vin": "1N4AL3AP4EC123456",
+            "year": 2023,
+            "make": "Nissan",
+            "model": "Altima"
+          },
+          "policy_number": "POL-300-8821",
+          "claimed_amount": 4500.0,
+          "loss_date": "2026-04-11",
+          "loss_type": "minor_collision",
+          "description": "Friday evening rear-end at stoplight. Reported Monday morning. Minor whiplash."
+        },
+        "claimant_history": {
+          "claimant_id": "C-104",
+          "total_prior_claims": 0,
+          "prior_fraud_flags": 0,
+          "claim_frequency_per_year": 0.2,
+          "total_prior_payouts": 0.0,
+          "prior_claims": [],
+          "known_addresses": [
+            "210 Cedar Ave, Columbus OH"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "1N4AL3AP4EC123456",
+              "year": 2023,
+              "make": "Nissan",
+              "model": "Altima"
+            }
+          ],
+          "associated_policies": [
+            "POL-300-8821"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0150",
+          "provider_type": "medical",
+          "provider_name": "Eastside Family Medical",
+          "license_status": "active",
+          "total_claims_served": 204,
+          "average_billing_amount": 5100.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 1.02,
+          "flagged_claims_count": 1,
+          "geographic_service_area": "Columbus Metro",
+          "claims_outside_service_area": 0,
+          "referral_connections": []
+        },
+        "vehicle_valuation": {
+          "vin": "1N4AL3AP4EC123456",
+          "year": 2023,
+          "make": "Nissan",
+          "model": "Altima",
+          "market_value": 35000.0,
+          "salvage_value": 8750.0,
+          "total_loss_threshold": 26250.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-300-8821",
+          "inception_date": "2024-07-01",
+          "expiration_date": "2027-07-01",
+          "days_since_inception": 296,
+          "days_until_expiration": 435,
+          "coverage_type": "collision",
+          "coverage_limits": {
+            "liability": 200000.0,
+            "collision": 15000.0,
+            "medical": 20000.0
+          },
+          "premium_amount": 750.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-01",
+              "amount": 750.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-04-01",
+              "amount": 750.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "1N4AL3AP4EC123456",
+              "date_added": "2024-07-01"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.054599"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-006",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "No duplicate indicators found",
+                "value": "0",
+                "benchmark": "0",
+                "severity": "clean",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.2/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": [
+              "No matching VIN, claimant, or description indicators"
+            ]
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy well-established",
+                "value": "296 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "clean",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 296 days old at time of loss. ",
+            "exculpatory_factors": [
+              "Long-standing policy with no changes"
+            ]
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount within regional benchmark",
+                "value": "$4,500",
+                "benchmark": "Median: $4,200",
+                "severity": "clean",
+                "source": "vehicle_valuation"
+              }
+            ],
+            "reasoning": "Claimed amount $4,500 vs. vehicle market value $35,000 and regional median repair cost $4,200 for minor_collision.",
+            "exculpatory_factors": [
+              "Claimed amount within normal range"
+            ]
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider within normal parameters",
+                "value": "billing_ratio=1.02",
+                "benchmark": "< 1.5x",
+                "severity": "clean",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 1.02x. Referral connections: 0. Claims outside area: 0.",
+            "exculpatory_factors": [
+              "Licensed and billing within normal range"
+            ]
+          }
+        },
+        "composite_score": 0.0,
+        "confidence": "low",
+        "priority_tier": "low",
+        "patterns_flagged": 0,
+        "narrative": "No significant fraud indicators found across the 4 patterns.",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": null
+    },
+    {
+      "claim_id": "CLM-2026-008",
+      "enriched": {
+        "claim_id": "CLM-2026-008",
+        "raw_claim": {
+          "claim_id": "CLM-2026-008",
+          "claimant": {
+            "id": "C-701",
+            "name": "Sarah Chen"
+          },
+          "provider": {
+            "id": "PRV-0500",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "4T1BF1FK5GU123456",
+            "year": 2024,
+            "make": "Toyota",
+            "model": "Camry"
+          },
+          "policy_number": "POL-400-1122",
+          "claimed_amount": 3200.0,
+          "loss_date": "2026-04-08",
+          "loss_type": "minor_collision",
+          "description": "Routine minor collision. Police report filed. Independent repair estimate provided."
+        },
+        "claimant_history": {
+          "claimant_id": "C-701",
+          "total_prior_claims": 0,
+          "prior_fraud_flags": 0,
+          "claim_frequency_per_year": 0.1,
+          "total_prior_payouts": 0.0,
+          "prior_claims": [],
+          "known_addresses": [
+            "888 Willow Way, Portland OR"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "4T1BF1FK5GU123456",
+              "year": 2024,
+              "make": "Toyota",
+              "model": "Camry"
+            }
+          ],
+          "associated_policies": [
+            "POL-400-1122"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0500",
+          "provider_type": "repair_shop",
+          "provider_name": "Pacific Auto Works",
+          "license_status": "active",
+          "total_claims_served": 312,
+          "average_billing_amount": 4800.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 0.96,
+          "flagged_claims_count": 0,
+          "geographic_service_area": "Portland Metro",
+          "claims_outside_service_area": 0,
+          "referral_connections": []
+        },
+        "vehicle_valuation": {
+          "vin": "4T1BF1FK5GU123456",
+          "year": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "market_value": 42000.0,
+          "salvage_value": 10500.0,
+          "total_loss_threshold": 31500.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-400-1122",
+          "inception_date": "2022-09-01",
+          "expiration_date": "2027-09-01",
+          "days_since_inception": 1330,
+          "days_until_expiration": 861,
+          "coverage_type": "collision",
+          "coverage_limits": {
+            "liability": 300000.0,
+            "collision": 50000.0,
+            "medical": 50000.0
+          },
+          "premium_amount": 1100.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-01",
+              "amount": 1100.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-04-01",
+              "amount": 1100.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "4T1BF1FK5GU123456",
+              "date_added": "2022-09-01"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.057253"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-008",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "No duplicate indicators found",
+                "value": "0",
+                "benchmark": "0",
+                "severity": "clean",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.1/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": [
+              "No matching VIN, claimant, or description indicators"
+            ]
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy well-established",
+                "value": "1330 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "clean",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 1330 days old at time of loss. ",
+            "exculpatory_factors": [
+              "Long-standing policy with no changes"
+            ]
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount within regional benchmark",
+                "value": "$3,200",
+                "benchmark": "Median: $4,200",
+                "severity": "clean",
+                "source": "vehicle_valuation"
+              }
+            ],
+            "reasoning": "Claimed amount $3,200 vs. vehicle market value $42,000 and regional median repair cost $4,200 for minor_collision.",
+            "exculpatory_factors": [
+              "Claimed amount within normal range"
+            ]
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider within normal parameters",
+                "value": "billing_ratio=0.96",
+                "benchmark": "< 1.5x",
+                "severity": "clean",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 0.96x. Referral connections: 0. Claims outside area: 0.",
+            "exculpatory_factors": [
+              "Licensed and billing within normal range"
+            ]
+          }
+        },
+        "composite_score": 0.0,
+        "confidence": "low",
+        "priority_tier": "low",
+        "patterns_flagged": 0,
+        "narrative": "No significant fraud indicators found across the 4 patterns.",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": null
+    },
+    {
+      "claim_id": "CLM-2026-010",
+      "enriched": {
+        "claim_id": "CLM-2026-010",
+        "raw_claim": {
+          "claim_id": "CLM-2026-010",
+          "claimant": {
+            "id": "C-901",
+            "name": "Linda Park"
+          },
+          "provider": {
+            "id": "PRV-0600",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "1G1ZD5ST8JF100010",
+            "year": 2021,
+            "make": "Chevrolet",
+            "model": "Malibu"
+          },
+          "policy_number": "POL-500-3310",
+          "claimed_amount": 5800.0,
+          "loss_date": "2026-04-09",
+          "loss_type": "minor_collision",
+          "description": "Side-swipe in parking structure. Single damage panel. Repair at local independent shop."
+        },
+        "claimant_history": {
+          "claimant_id": "C-901",
+          "total_prior_claims": 0,
+          "prior_fraud_flags": 0,
+          "claim_frequency_per_year": 0.1,
+          "total_prior_payouts": 0.0,
+          "prior_claims": [],
+          "known_addresses": [
+            "440 Pine Rd, Minneapolis MN"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "1G1ZD5ST8JF100010",
+              "year": 2021,
+              "make": "Chevrolet",
+              "model": "Malibu"
+            }
+          ],
+          "associated_policies": [
+            "POL-500-3310"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0600",
+          "provider_type": "repair_shop",
+          "provider_name": "Northside Auto Repair",
+          "license_status": "active",
+          "total_claims_served": 88,
+          "average_billing_amount": 5200.0,
+          "regional_average_billing": 5000.0,
+          "billing_ratio": 1.04,
+          "flagged_claims_count": 0,
+          "geographic_service_area": "Minneapolis Metro",
+          "claims_outside_service_area": 0,
+          "referral_connections": []
+        },
+        "vehicle_valuation": {
+          "vin": "1G1ZD5ST8JF100010",
+          "year": 2021,
+          "make": "Chevrolet",
+          "model": "Malibu",
+          "market_value": 24000.0,
+          "salvage_value": 6000.0,
+          "total_loss_threshold": 18000.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-500-3310",
+          "inception_date": "2021-05-01",
+          "expiration_date": "2027-05-01",
+          "days_since_inception": 1087,
+          "days_until_expiration": 373,
+          "coverage_type": "collision",
+          "coverage_limits": {
+            "liability": 250000.0,
+            "collision": 25000.0,
+            "medical": 25000.0
+          },
+          "premium_amount": 850.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-01",
+              "amount": 850.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-04-01",
+              "amount": 850.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "1G1ZD5ST8JF100010",
+              "date_added": "2021-05-01"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.066220"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-010",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "No duplicate indicators found",
+                "value": "0",
+                "benchmark": "0",
+                "severity": "clean",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 0 prior fraud flag(s), 0 total prior claims, frequency 0.1/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": [
+              "No matching VIN, claimant, or description indicators"
+            ]
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy well-established",
+                "value": "1087 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "clean",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 1087 days old at time of loss. ",
+            "exculpatory_factors": [
+              "Long-standing policy with no changes"
+            ]
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount within regional benchmark",
+                "value": "$5,800",
+                "benchmark": "Median: $4,200",
+                "severity": "clean",
+                "source": "vehicle_valuation"
+              }
+            ],
+            "reasoning": "Claimed amount $5,800 vs. vehicle market value $24,000 and regional median repair cost $4,200 for minor_collision.",
+            "exculpatory_factors": [
+              "Claimed amount within normal range"
+            ]
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider within normal parameters",
+                "value": "billing_ratio=1.04",
+                "benchmark": "< 1.5x",
+                "severity": "clean",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 1.04x. Referral connections: 0. Claims outside area: 0.",
+            "exculpatory_factors": [
+              "Licensed and billing within normal range"
+            ]
+          }
+        },
+        "composite_score": 0.0,
+        "confidence": "low",
+        "priority_tier": "low",
+        "patterns_flagged": 0,
+        "narrative": "No significant fraud indicators found across the 4 patterns.",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": null
+    },
+    {
+      "claim_id": "CLM-2026-011",
+      "enriched": {
+        "claim_id": "CLM-2026-011",
+        "raw_claim": {
+          "claim_id": "CLM-2026-011",
+          "claimant": {
+            "id": "C-902",
+            "name": "David Torres"
+          },
+          "provider": {
+            "id": "PRV-0700",
+            "type": "repair_shop"
+          },
+          "vehicle": {
+            "vin": "3FADP4BJ7BM100011",
+            "year": 2022,
+            "make": "Ford",
+            "model": "Fusion"
+          },
+          "policy_number": "POL-600-7721",
+          "claimed_amount": 12600.0,
+          "loss_date": "2026-04-03",
+          "loss_type": "major_collision",
+          "description": "T-bone collision at uncontrolled intersection. Moderate door and frame damage. Police report filed."
+        },
+        "claimant_history": {
+          "claimant_id": "C-902",
+          "total_prior_claims": 1,
+          "prior_fraud_flags": 0,
+          "claim_frequency_per_year": 0.4,
+          "total_prior_payouts": 7800.0,
+          "prior_claims": [],
+          "known_addresses": [
+            "615 Market St, Denver CO"
+          ],
+          "associated_vehicles": [
+            {
+              "vin": "3FADP4BJ7BM100011",
+              "year": 2022,
+              "make": "Ford",
+              "model": "Fusion"
+            }
+          ],
+          "associated_policies": [
+            "POL-600-7721"
+          ]
+        },
+        "provider_network": {
+          "provider_id": "PRV-0700",
+          "provider_type": "repair_shop",
+          "provider_name": "Mile High Collision Center",
+          "license_status": "active",
+          "total_claims_served": 155,
+          "average_billing_amount": 11000.0,
+          "regional_average_billing": 10000.0,
+          "billing_ratio": 1.1,
+          "flagged_claims_count": 2,
+          "geographic_service_area": "Denver Metro",
+          "claims_outside_service_area": 1,
+          "referral_connections": []
+        },
+        "vehicle_valuation": {
+          "vin": "3FADP4BJ7BM100011",
+          "year": 2022,
+          "make": "Ford",
+          "model": "Fusion",
+          "market_value": 26000.0,
+          "salvage_value": 6500.0,
+          "total_loss_threshold": 19500.0,
+          "regional_repair_benchmarks": {
+            "minor_collision": {
+              "low": 1500.0,
+              "median": 4200.0,
+              "high": 8500.0
+            },
+            "major_collision": {
+              "low": 8000.0,
+              "median": 15000.0,
+              "high": 28000.0
+            },
+            "comprehensive": {
+              "low": 5000.0,
+              "median": 12000.0,
+              "high": 25000.0
+            }
+          },
+          "prior_claims_on_vin": [],
+          "title_history": [
+            "clean"
+          ]
+        },
+        "policy_details": {
+          "policy_number": "POL-600-7721",
+          "inception_date": "2024-02-15",
+          "expiration_date": "2027-02-15",
+          "days_since_inception": 432,
+          "days_until_expiration": 298,
+          "coverage_type": "comprehensive",
+          "coverage_limits": {
+            "liability": 300000.0,
+            "collision": 30000.0,
+            "medical": 40000.0
+          },
+          "premium_amount": 1050.0,
+          "premium_payment_history": [
+            {
+              "date": "2026-01-15",
+              "amount": 1050.0,
+              "status": "paid"
+            },
+            {
+              "date": "2026-04-15",
+              "amount": 1050.0,
+              "status": "paid"
+            }
+          ],
+          "recent_policy_changes": [],
+          "vehicles_on_policy": [
+            {
+              "vin": "3FADP4BJ7BM100011",
+              "date_added": "2024-02-15"
+            }
+          ],
+          "policy_status": "active",
+          "lapse_history": []
+        },
+        "enrichment_status": "complete",
+        "enrichment_timestamp": "2026-04-23T11:28:13.093121"
+      },
+      "fraud_analysis": {
+        "claim_id": "CLM-2026-011",
+        "pattern_results": {
+          "duplicate_similar": {
+            "pattern": "duplicate_similar",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "No duplicate indicators found",
+                "value": "0",
+                "benchmark": "0",
+                "severity": "clean",
+                "source": "claimant_history"
+              }
+            ],
+            "reasoning": "Claimant has 0 prior fraud flag(s), 1 total prior claims, frequency 0.4/yr, and 0 prior claim(s) on this specific VIN.",
+            "exculpatory_factors": [
+              "No matching VIN, claimant, or description indicators"
+            ]
+          },
+          "suspicious_timing": {
+            "pattern": "suspicious_timing",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Policy well-established",
+                "value": "432 days since inception",
+                "benchmark": "> 90 days",
+                "severity": "clean",
+                "source": "policy_details"
+              }
+            ],
+            "reasoning": "Policy was 432 days old at time of loss. ",
+            "exculpatory_factors": [
+              "Long-standing policy with no changes"
+            ]
+          },
+          "inflated_amounts": {
+            "pattern": "inflated_amounts",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Claimed amount within regional benchmark",
+                "value": "$12,600",
+                "benchmark": "Median: $15,000",
+                "severity": "clean",
+                "source": "vehicle_valuation"
+              }
+            ],
+            "reasoning": "Claimed amount $12,600 vs. vehicle market value $26,000 and regional median repair cost $15,000 for major_collision.",
+            "exculpatory_factors": [
+              "Claimed amount within normal range"
+            ]
+          },
+          "provider_network": {
+            "pattern": "provider_network",
+            "score": 0.0,
+            "severity": "clean",
+            "flags": [],
+            "evidence": [
+              {
+                "indicator": "Provider within normal parameters",
+                "value": "billing_ratio=1.10",
+                "benchmark": "< 1.5x",
+                "severity": "clean",
+                "source": "provider_network"
+              }
+            ],
+            "reasoning": "Provider license: active. Billing ratio: 1.10x. Referral connections: 0. Claims outside area: 1.",
+            "exculpatory_factors": [
+              "Licensed and billing within normal range"
+            ]
+          }
+        },
+        "composite_score": 0.0,
+        "confidence": "low",
+        "priority_tier": "low",
+        "patterns_flagged": 0,
+        "narrative": "No significant fraud indicators found across the 4 patterns.",
+        "weights": {
+          "duplicate_similar": 0.3,
+          "suspicious_timing": 0.2,
+          "inflated_amounts": 0.25,
+          "provider_network": 0.25
+        }
+      },
+      "report": null
+    }
+  ]
+}
