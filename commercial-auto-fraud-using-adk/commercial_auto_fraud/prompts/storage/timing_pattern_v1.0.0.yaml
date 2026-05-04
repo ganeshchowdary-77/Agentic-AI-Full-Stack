@@ -1,0 +1,37 @@
+metadata:
+  prompt_id: timing_pattern
+  version: v1.0.0
+  description: CoT Suspicious Timing Analyzer
+  created_at: '2026-04-24T00:00:00Z'
+  created_by: system
+  prompt_type: chain_of_thought
+system_message: |
+  PATTERN: Suspicious Timing
+  CLAIM: {claim_id} — {claimant_name} — {loss_date} — ${claimed_amount}
+
+  ENRICHED DATA PROVIDED:
+  {enriched_data}
+
+  EVALUATE this claim for Suspicious Timing fraud indicators using step-by-step reasoning:
+
+  Step 1: Identify all relevant timing data points
+  Step 2: Assess each indicator (red flag, neutral, or exculpatory)
+  Step 3: Weigh the evidence
+  Step 4: Score the pattern (0-100)
+  Step 5: Compile evidence list
+
+  Focus on: claim filing relative to policy lifecycle — within 30 days of inception, within 60 days of expiration/cancellation, Friday night loss reported Monday, within 72 hours of coverage change, seasonal anomalies.
+
+  OUTPUT FORMAT:
+  Return a JSON object matching this schema:
+  {{
+    "pattern": "suspicious_timing",
+    "score": <0-100>,
+    "severity": "clean|minor|notable|significant|critical",
+    "evidence": [
+      {{"indicator": "...", "value": "...", "benchmark": "...", "severity": "...", "source": "..."}}
+    ],
+    "reasoning": "Step-by-step reasoning summary...",
+    "exculpatory_factors": ["...", "..."]
+  }}
+user_message_template: ''

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Auto Fraud Detection - SIU Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            color: #2d3748;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #718096;
+            font-size: 16px;
+        }
+        
+        .upload-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .upload-section h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+        
+        .file-input-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .file-input-wrapper input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        
+        .file-input-label {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .file-input-label:hover {
+            background: #5568d3;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            background: #48bb78;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            margin-left: 10px;
+        }
+        
+        .btn:hover {
+            background: #38a169;
+        }
+        
+        .btn:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+        }
+        
+        .status-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            display: none;
+        }
+        
+        .status-section.active {
+            display: block;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .results-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .results-section.active {
+            display: block;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-card h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .stat-card .value {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .tier-critical { background: linear-gradient(135deg, #f56565 0%, #c53030 100%); }
+        .tier-high { background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%); }
+        .tier-medium { background: linear-gradient(135deg, #ecc94b 0%, #d69e2e 100%); }
+        .tier-low { background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); }
+        
+        .claims-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .claims-table th {
+            background: #f7fafc;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #2d3748;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .claims-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .claims-table tr:hover {
+            background: #f7fafc;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .badge-critical { background: #fed7d7; color: #c53030; }
+        .badge-high { background: #feebc8; color: #dd6b20; }
+        .badge-medium { background: #fefcbf; color: #d69e2e; }
+        .badge-low { background: #c6f6d5; color: #38a169; }
+        
+        .error-message {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        
+        .success-message {
+            background: #c6f6d5;
+            color: #38a169;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Commercial Auto Fraud Detection</h1>
+            <p>Special Investigations Unit (SIU) Dashboard - Powered by Google ADK</p>
+        </div>
+        
+        <div class="upload-section">
+            <h2>Submit Batch for Analysis</h2>
+            <div class="file-input-wrapper">
+                <label class="file-input-label">
+                    Choose JSON File
+                    <input type="file" id="fileInput" accept=".json">
+                </label>
+            </div>
+            <button class="btn" id="submitBtn" disabled>Analyze Batch</button>
+            <div id="uploadMessage"></div>
+        </div>
+        
+        <div class="status-section" id="statusSection">
+            <div class="loading">
+                <div class="spinner"></div>
+                <h3>Processing batch...</h3>
+                <p id="statusText">Initializing fraud detection pipeline</p>
+            </div>
+        </div>
+        
+        <div class="results-section" id="resultsSection">
+            <h2>Batch Analysis Results</h2>
+            <div class="stats-grid" id="statsGrid"></div>
+            <h3 style="margin-top: 30px; margin-bottom: 15px;">Claims Details</h3>
+            <table class="claims-table" id="claimsTable">
+                <thead>
+                    <tr>
+                        <th>Claim ID</th>
+                        <th>Claimant</th>
+                        <th>Amount</th>
+                        <th>Fraud Score</th>
+                        <th>Priority</th>
+                        <th>Confidence</th>
+                        <th>Top Pattern</th>
+                        <th>Report</th>
+                    </tr>
+                </thead>
+                <tbody id="claimsTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        let selectedFile = null;
+        let currentBatchId = null;
+        
+        const fileInput = document.getElementById('fileInput');
+        const submitBtn = document.getElementById('submitBtn');
+        const uploadMessage = document.getElementById('uploadMessage');
+        const statusSection = document.getElementById('statusSection');
+        const resultsSection = document.getElementById('resultsSection');
+        const statusText = document.getElementById('statusText');
+        const statsGrid = document.getElementById('statsGrid');
+        const claimsTableBody = document.getElementById('claimsTableBody');
+        
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                selectedFile = file;
+                submitBtn.disabled = false;
+                uploadMessage.innerHTML = `<div class="success-message">File selected: ${file.name}</div>`;
+            }
+        });
+        
+        submitBtn.addEventListener('click', async () => {
+            if (!selectedFile) return;
+            
+            try {
+                const text = await selectedFile.text();
+                const batchData = JSON.parse(text);
+                
+                submitBtn.disabled = true;
+                statusSection.classList.add('active');
+                resultsSection.classList.remove('active');
+                statusText.textContent = 'Submitting batch to fraud detection pipeline...';
+                
+                const response = await fetch('/api/fraud-detection/batch', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(batchData)
+                });
+                
+                const result = await response.json();
+                
+                if (result.status === 'complete') {
+                    currentBatchId = result.batch_id;
+                    displayResults(result);
+                } else if (result.status === 'error') {
+                    throw new Error(result.error || 'Processing failed');
+                }
+                
+            } catch (error) {
+                uploadMessage.innerHTML = `<div class="error-message">Error: ${error.message}</div>`;
+                statusSection.classList.remove('active');
+                submitBtn.disabled = false;
+            }
+        });
+        
+        function displayResults(data) {
+            statusSection.classList.remove('active');
+            resultsSection.classList.add('active');
+            submitBtn.disabled = false;
+            
+            const summary = data.summary;
+            const tierDist = summary.tier_distribution;
+            
+            // Display stats
+            statsGrid.innerHTML = `
+                <div class="stat-card">
+                    <h3>Total Claims</h3>
+                    <div class="value">${summary.total_claims}</div>
+                </div>
+                <div class="stat-card tier-critical">
+                    <h3>Critical Priority</h3>
+                    <div class="value">${tierDist.critical || 0}</div>
+                </div>
+                <div class="stat-card tier-high">
+                    <h3>High Priority</h3>
+                    <div class="value">${tierDist.high || 0}</div>
+                </div>
+                <div class="stat-card tier-medium">
+                    <h3>Medium Priority</h3>
+                    <div class="value">${tierDist.medium || 0}</div>
+                </div>
+                <div class="stat-card tier-low">
+                    <h3>Low Priority</h3>
+                    <div class="value">${tierDist.low || 0}</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Processing Time</h3>
+                    <div class="value">${(summary.processing_time_ms / 1000).toFixed(1)}s</div>
+                </div>
+            `;
+            
+            // Fetch full results to display claims table
+            fetchFullResults(data.batch_id);
+        }
+        
+        async function fetchFullResults(batchId) {
+            try {
+                const response = await fetch(`/api/batch/${batchId}/results`);
+                const data = await response.json();
+                
+                if (data.results) {
+                    displayClaimsTable(data.results);
+                }
+            } catch (error) {
+                console.error('Error fetching full results:', error);
+            }
+        }
+        
+        function displayClaimsTable(results) {
+            claimsTableBody.innerHTML = results.map(claim => {
+                const tierClass = `badge-${claim.priority_tier}`;
+                return `
+                    <tr>
+                        <td><strong>${claim.claim_id}</strong></td>
+                        <td>${claim.claimant_name}</td>
+                        <td>$${claim.claimed_amount.toLocaleString()}</td>
+                        <td><strong>${claim.composite_score.toFixed(1)}</strong></td>
+                        <td><span class="badge ${tierClass}">${claim.priority_tier.toUpperCase()}</span></td>
+                        <td>${claim.confidence}</td>
+                        <td>${claim.top_pattern || 'N/A'}</td>
+                        <td>${claim.has_report ? '✅ Generated' : '—'}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+    </script>
+</body>
+</html>

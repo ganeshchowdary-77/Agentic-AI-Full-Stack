@@ -1,138 +1,666 @@
 {
-  "batch_id": "batch_2026_w16",
-  "batch_name": "Weekly Auto Claims — Week 16, April 2026",
+  "batch_id": "batch_2026_w16_enterprise",
+  "batch_name": "Weekly Auto Claims \u2014 Week 16, April 2026 (Enterprise Demo)",
   "claims": [
     {
-      "claim_id": "CLM-2026-001",
-      "claimant": {"id": "C-4821", "name": "Marcus Rivera"},
-      "provider": {"id": "PRV-0093", "type": "repair_shop"},
-      "vehicle": {"vin": "1HGCM82633A004352", "year": 2022, "make": "Honda", "model": "Accord"},
+      "claim_id": "CLM-2026-D01",
+      "claimant": {
+        "id": "C-4821",
+        "name": "Marcus Rivera"
+      },
+      "provider": {
+        "id": "PRV-0093",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "1HGCM82633A004352",
+        "year": 2022,
+        "make": "Honda",
+        "model": "Accord"
+      },
       "policy_number": "POL-99-1234",
-      "claimed_amount": 42000.00,
+      "claimed_amount": 42000.0,
       "loss_date": "2026-04-11",
       "loss_type": "major_collision",
-      "description": "Rear-end collision on I-94 northbound. Total loss claimed. Towed by referral from provider."
+      "description": "Rear-end collision on I-94 northbound. Total loss claimed."
     },
     {
-      "claim_id": "CLM-2026-002",
-      "claimant": {"id": "C-4821", "name": "Marcus Rivera"},
-      "provider": {"id": "PRV-0093", "type": "repair_shop"},
-      "vehicle": {"vin": "1HGCM82633A004352", "year": 2022, "make": "Honda", "model": "Accord"},
+      "claim_id": "CLM-2026-D02",
+      "claimant": {
+        "id": "C-4821",
+        "name": "Marcus Rivera"
+      },
+      "provider": {
+        "id": "PRV-0093",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "1HGCM82633A004352",
+        "year": 2022,
+        "make": "Honda",
+        "model": "Accord"
+      },
       "policy_number": "POL-99-5678",
-      "claimed_amount": 38500.00,
+      "claimed_amount": 38500.0,
       "loss_date": "2026-04-13",
       "loss_type": "major_collision",
-      "description": "Rear-end collision on same vehicle, filed under second policy 2 days after CLM-2026-001."
+      "description": "Rear-end collision on same vehicle, filed under second policy."
     },
     {
-      "claim_id": "CLM-2026-003",
-      "claimant": {"id": "C-5502", "name": "Diana Kowalski"},
-      "provider": {"id": "PRV-0200", "type": "medical"},
-      "vehicle": {"vin": "2T1BR32E61C002711", "year": 2019, "make": "Toyota", "model": "Camry"},
+      "claim_id": "CLM-2026-M00",
+      "claimant": {
+        "id": "C-5500",
+        "name": "Diana Kowalski 0"
+      },
+      "provider": {
+        "id": "PRV-0200",
+        "type": "medical"
+      },
+      "vehicle": {
+        "vin": "2T1BR32E61C002710",
+        "year": 2019,
+        "make": "Toyota",
+        "model": "Camry"
+      },
       "policy_number": "POL-99-7890",
-      "claimed_amount": 55000.00,
+      "claimed_amount": 55000.0,
       "loss_date": "2026-04-07",
       "loss_type": "comprehensive",
-      "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury requiring surgery."
+      "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury."
     },
     {
-      "claim_id": "CLM-2026-004",
-      "claimant": {"id": "C-201", "name": "Thomas Bennett"},
-      "provider": {"id": "PRV-0301", "type": "repair_shop"},
-      "vehicle": {"vin": "3VWFE21C04M000001", "year": 2021, "make": "Volkswagen", "model": "Jetta"},
-      "policy_number": "POL-200-4432",
-      "claimed_amount": 8200.00,
+      "claim_id": "CLM-2026-M01",
+      "claimant": {
+        "id": "C-5501",
+        "name": "Diana Kowalski 1"
+      },
+      "provider": {
+        "id": "PRV-0200",
+        "type": "medical"
+      },
+      "vehicle": {
+        "vin": "2T1BR32E61C002711",
+        "year": 2019,
+        "make": "Toyota",
+        "model": "Camry"
+      },
+      "policy_number": "POL-99-7891",
+      "claimed_amount": 55000.0,
+      "loss_date": "2026-04-07",
+      "loss_type": "comprehensive",
+      "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury."
+    },
+    {
+      "claim_id": "CLM-2026-M02",
+      "claimant": {
+        "id": "C-5502",
+        "name": "Diana Kowalski 2"
+      },
+      "provider": {
+        "id": "PRV-0200",
+        "type": "medical"
+      },
+      "vehicle": {
+        "vin": "2T1BR32E61C002712",
+        "year": 2019,
+        "make": "Toyota",
+        "model": "Camry"
+      },
+      "policy_number": "POL-99-7892",
+      "claimed_amount": 55000.0,
+      "loss_date": "2026-04-07",
+      "loss_type": "comprehensive",
+      "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury."
+    },
+    {
+      "claim_id": "CLM-2026-M03",
+      "claimant": {
+        "id": "C-5503",
+        "name": "Diana Kowalski 3"
+      },
+      "provider": {
+        "id": "PRV-0200",
+        "type": "medical"
+      },
+      "vehicle": {
+        "vin": "2T1BR32E61C002713",
+        "year": 2019,
+        "make": "Toyota",
+        "model": "Camry"
+      },
+      "policy_number": "POL-99-7893",
+      "claimed_amount": 55000.0,
+      "loss_date": "2026-04-07",
+      "loss_type": "comprehensive",
+      "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury."
+    },
+    {
+      "claim_id": "CLM-2026-M04",
+      "claimant": {
+        "id": "C-5504",
+        "name": "Diana Kowalski 4"
+      },
+      "provider": {
+        "id": "PRV-0200",
+        "type": "medical"
+      },
+      "vehicle": {
+        "vin": "2T1BR32E61C002714",
+        "year": 2019,
+        "make": "Toyota",
+        "model": "Camry"
+      },
+      "policy_number": "POL-99-7894",
+      "claimed_amount": 55000.0,
+      "loss_date": "2026-04-07",
+      "loss_type": "comprehensive",
+      "description": "Low-speed parking lot fender-bender. Claimant alleges severe whiplash and back injury."
+    },
+    {
+      "claim_id": "CLM-2026-T01",
+      "claimant": {
+        "id": "C-601",
+        "name": "Elena Vasquez"
+      },
+      "provider": {
+        "id": "PRV-0400",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "1FTBW2CM4JKA12345",
+        "year": 2018,
+        "make": "Ford",
+        "model": "Transit"
+      },
+      "policy_number": "POL-88-4411",
+      "claimed_amount": 48000.0,
+      "loss_date": "2026-04-10",
+      "loss_type": "major_collision",
+      "description": "Commercial fleet vehicle. Alleged total loss. Coverage upgrade filed recently."
+    },
+    {
+      "claim_id": "CLM-2026-I01",
+      "claimant": {
+        "id": "C-103",
+        "name": "Priya Menon"
+      },
+      "provider": {
+        "id": "PRV-0093",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "5XYKT3A62DG143001",
+        "year": 2020,
+        "make": "Kia",
+        "model": "Sorento"
+      },
+      "policy_number": "POL-99-2211",
+      "claimed_amount": 29000.0,
+      "loss_date": "2026-04-04",
+      "loss_type": "major_collision",
+      "description": "Total loss claimed. Claimed amount exceeds vehicle market value."
+    },
+    {
+      "claim_id": "CLM-2026-C000",
+      "claimant": {
+        "id": "C-800",
+        "name": "Customer 0"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00000",
+        "year": 2021,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0000",
+      "claimed_amount": 2991.0,
       "loss_date": "2026-04-09",
       "loss_type": "minor_collision",
       "description": "Parking lot collision with stationary object. Repair at local shop."
     },
     {
-      "claim_id": "CLM-2026-005",
-      "claimant": {"id": "C-103", "name": "Priya Menon"},
-      "provider": {"id": "PRV-0093", "type": "repair_shop"},
-      "vehicle": {"vin": "5XYKT3A62DG143001", "year": 2020, "make": "Kia", "model": "Sorento"},
-      "policy_number": "POL-99-2211",
-      "claimed_amount": 29000.00,
-      "loss_date": "2026-04-04",
-      "loss_type": "major_collision",
-      "description": "Total loss claimed. Same repair shop as CLM-2026-001 and CLM-2026-002. Claimed amount exceeds vehicle market value."
-    },
-    {
-      "claim_id": "CLM-2026-006",
-      "claimant": {"id": "C-104", "name": "Robert Kim"},
-      "provider": {"id": "PRV-0150", "type": "medical"},
-      "vehicle": {"vin": "1N4AL3AP4EC123456", "year": 2023, "make": "Nissan", "model": "Altima"},
-      "policy_number": "POL-300-8821",
-      "claimed_amount": 4500.00,
-      "loss_date": "2026-04-11",
-      "loss_type": "minor_collision",
-      "description": "Friday evening rear-end at stoplight. Reported Monday morning. Minor whiplash."
-    },
-    {
-      "claim_id": "CLM-2026-007",
-      "claimant": {"id": "C-601", "name": "Elena Vasquez"},
-      "provider": {"id": "PRV-0400", "type": "repair_shop"},
-      "vehicle": {"vin": "1FTBW2CM4JKA12345", "year": 2018, "make": "Ford", "model": "Transit"},
-      "policy_number": "POL-88-4411",
-      "claimed_amount": 48000.00,
-      "loss_date": "2026-04-10",
-      "loss_type": "major_collision",
-      "description": "Commercial fleet vehicle. Alleged total loss. Coverage upgrade filed 68 hours before incident."
-    },
-    {
-      "claim_id": "CLM-2026-008",
-      "claimant": {"id": "C-701", "name": "Sarah Chen"},
-      "provider": {"id": "PRV-0500", "type": "repair_shop"},
-      "vehicle": {"vin": "4T1BF1FK5GU123456", "year": 2024, "make": "Toyota", "model": "Camry"},
-      "policy_number": "POL-400-1122",
-      "claimed_amount": 3200.00,
-      "loss_date": "2026-04-08",
-      "loss_type": "minor_collision",
-      "description": "Routine minor collision. Police report filed. Independent repair estimate provided."
-    },
-    {
-      "claim_id": "CLM-2026-009",
-      "claimant": {"id": "C-802", "name": "James Okafor"},
-      "provider": {"id": "PRV-0093", "type": "repair_shop"},
-      "vehicle": {"vin": "WBA3A5C50DF000109", "year": 2020, "make": "BMW", "model": "3 Series"},
-      "policy_number": "POL-99-8844",
-      "claimed_amount": 35500.00,
-      "loss_date": "2026-04-06",
-      "loss_type": "major_collision",
-      "description": "Intersection collision. Sent to FastFix Auto Body (PRV-0093) — same shop appearing on 3 other batch claims."
-    },
-    {
-      "claim_id": "CLM-2026-010",
-      "claimant": {"id": "C-901", "name": "Linda Park"},
-      "provider": {"id": "PRV-0600", "type": "repair_shop"},
-      "vehicle": {"vin": "1G1ZD5ST8JF100010", "year": 2021, "make": "Chevrolet", "model": "Malibu"},
-      "policy_number": "POL-500-3310",
-      "claimed_amount": 5800.00,
+      "claim_id": "CLM-2026-C001",
+      "claimant": {
+        "id": "C-801",
+        "name": "Customer 1"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00001",
+        "year": 2019,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0001",
+      "claimed_amount": 2547.0,
       "loss_date": "2026-04-09",
       "loss_type": "minor_collision",
-      "description": "Side-swipe in parking structure. Single damage panel. Repair at local independent shop."
+      "description": "Parking lot collision with stationary object. Repair at local shop."
     },
     {
-      "claim_id": "CLM-2026-011",
-      "claimant": {"id": "C-902", "name": "David Torres"},
-      "provider": {"id": "PRV-0700", "type": "repair_shop"},
-      "vehicle": {"vin": "3FADP4BJ7BM100011", "year": 2022, "make": "Ford", "model": "Fusion"},
-      "policy_number": "POL-600-7721",
-      "claimed_amount": 12600.00,
-      "loss_date": "2026-04-03",
-      "loss_type": "major_collision",
-      "description": "T-bone collision at uncontrolled intersection. Moderate door and frame damage. Police report filed."
+      "claim_id": "CLM-2026-C002",
+      "claimant": {
+        "id": "C-802",
+        "name": "Customer 2"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00002",
+        "year": 2021,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0002",
+      "claimed_amount": 3953.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
     },
     {
-      "claim_id": "CLM-2026-012",
-      "claimant": {"id": "C-903", "name": "Amy Johnson"},
-      "provider": {"id": "PRV-0200", "type": "medical"},
-      "vehicle": {"vin": "5J8TB3H56GL100012", "year": 2023, "make": "Acura", "model": "RDX"},
-      "policy_number": "POL-99-0012",
-      "claimed_amount": 41000.00,
-      "loss_date": "2026-04-05",
-      "loss_type": "comprehensive",
-      "description": "Rear-end collision. Referred to QuickMed Injury Clinic (PRV-0200) — same clinic as CLM-2026-003. Alleged spinal injury."
+      "claim_id": "CLM-2026-C003",
+      "claimant": {
+        "id": "C-803",
+        "name": "Customer 3"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00003",
+        "year": 2020,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0003",
+      "claimed_amount": 4114.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C004",
+      "claimant": {
+        "id": "C-804",
+        "name": "Customer 4"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00004",
+        "year": 2022,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0004",
+      "claimed_amount": 4053.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C005",
+      "claimant": {
+        "id": "C-805",
+        "name": "Customer 5"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00005",
+        "year": 2019,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0005",
+      "claimed_amount": 2235.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C006",
+      "claimant": {
+        "id": "C-806",
+        "name": "Customer 6"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00006",
+        "year": 2020,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0006",
+      "claimed_amount": 4412.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C007",
+      "claimant": {
+        "id": "C-807",
+        "name": "Customer 7"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00007",
+        "year": 2022,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0007",
+      "claimed_amount": 2356.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C008",
+      "claimant": {
+        "id": "C-808",
+        "name": "Customer 8"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00008",
+        "year": 2019,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0008",
+      "claimed_amount": 3293.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C009",
+      "claimant": {
+        "id": "C-809",
+        "name": "Customer 9"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00009",
+        "year": 2019,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0009",
+      "claimed_amount": 4369.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C010",
+      "claimant": {
+        "id": "C-8010",
+        "name": "Customer 10"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00010",
+        "year": 2019,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0010",
+      "claimed_amount": 4442.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C011",
+      "claimant": {
+        "id": "C-8011",
+        "name": "Customer 11"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00011",
+        "year": 2021,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0011",
+      "claimed_amount": 1536.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C012",
+      "claimant": {
+        "id": "C-8012",
+        "name": "Customer 12"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00012",
+        "year": 2021,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0012",
+      "claimed_amount": 2079.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C013",
+      "claimant": {
+        "id": "C-8013",
+        "name": "Customer 13"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00013",
+        "year": 2020,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0013",
+      "claimed_amount": 2113.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C014",
+      "claimant": {
+        "id": "C-8014",
+        "name": "Customer 14"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00014",
+        "year": 2020,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0014",
+      "claimed_amount": 2400.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C015",
+      "claimant": {
+        "id": "C-8015",
+        "name": "Customer 15"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00015",
+        "year": 2021,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0015",
+      "claimed_amount": 2526.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C016",
+      "claimant": {
+        "id": "C-8016",
+        "name": "Customer 16"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00016",
+        "year": 2020,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0016",
+      "claimed_amount": 2721.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C017",
+      "claimant": {
+        "id": "C-8017",
+        "name": "Customer 17"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00017",
+        "year": 2019,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0017",
+      "claimed_amount": 3889.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C018",
+      "claimant": {
+        "id": "C-8018",
+        "name": "Customer 18"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00018",
+        "year": 2019,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0018",
+      "claimed_amount": 4191.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C019",
+      "claimant": {
+        "id": "C-8019",
+        "name": "Customer 19"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00019",
+        "year": 2021,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0019",
+      "claimed_amount": 3375.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
+    },
+    {
+      "claim_id": "CLM-2026-C020",
+      "claimant": {
+        "id": "C-8020",
+        "name": "Customer 20"
+      },
+      "provider": {
+        "id": "PRV-0301",
+        "type": "repair_shop"
+      },
+      "vehicle": {
+        "vin": "3VWFE21C04M00020",
+        "year": 2020,
+        "make": "Volkswagen",
+        "model": "Jetta"
+      },
+      "policy_number": "POL-200-0020",
+      "claimed_amount": 4125.0,
+      "loss_date": "2026-04-09",
+      "loss_type": "minor_collision",
+      "description": "Parking lot collision with stationary object. Repair at local shop."
     }
   ]
 }

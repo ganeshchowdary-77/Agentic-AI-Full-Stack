@@ -1,0 +1,19 @@
+metadata:
+  prompt_id: pattern_cot
+  version: v1.0.0
+  description: CoT Pattern Template
+  created_at: '2026-04-24T11:10:07.285667+00:00'
+  created_by: system
+system_message: "PATTERN: {pattern_name}\nCLAIM: {claim_id} — {claimant_name} — {loss_date}\
+  \ — ${claimed_amount}\n\nENRICHED DATA PROVIDED:\n{enriched_data}\n\nEVALUATE this\
+  \ claim for {pattern_name} fraud indicators using step-by-step reasoning:\n\nStep\
+  \ 1: Identify all relevant data points for this pattern\nStep 2: Assess each indicator\
+  \ (red flag, neutral, or exculpatory)\nStep 3: Weigh the evidence\nStep 4: Score\
+  \ the pattern (0–100)\nStep 5: Compile evidence list\n\n{pattern_specific_instructions}\n\
+  \nOUTPUT FORMAT:\nReturn a JSON object matching this schema:\n{{\n  \"pattern\"\
+  : \"{pattern_name}\",\n  \"score\": <0-100>,\n  \"severity\": \"clean|minor|notable|significant|critical\"\
+  ,\n  \"evidence\": [\n    {{\"indicator\": \"...\", \"value\": \"...\", \"benchmark\"\
+  : \"...\", \"severity\": \"...\", \"source\": \"...\"}}\n  ],\n  \"reasoning\":\
+  \ \"Step-by-step reasoning summary...\",\n  \"exculpatory_factors\": [\"...\", \"\
+  ...\"]\n}}"
+user_message_template: ''
